@@ -1,0 +1,13 @@
+body {
+  font-family: "rubik", sans-serif;
+}
+
+.spacer {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.layer1 {
+  background-image: url("./assets/nnnoise.svg");
+}
