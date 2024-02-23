@@ -5,24 +5,32 @@ function HomePage() {
         <Header></Header>
         <div className="home-mid w-5/6 md:w-3/6">
           <img
-            className="inline-block w-28 md:w-36 border-4 border-gray-200 w-36 rounded-full ring-2 ring-white"
+            className="inline-block w-28 md:w-36 mt-4 sm:mt-0 rounded-full ring-1 ring-[#132043]"
             src="src\assets\IMG_2497.jpeg"
             alt="portrait"
           />
-          <h1 className="text-4xl md:text-6xl font-[poppins] font-semibold">
+          <h1 className="text-4xl md:text-6xl mt-2 font-[poppins] font-semibold">
             Umar Farooq
           </h1>
-          <h3 className="text-xl md:text-2xl font-[poppins] mt-1">
+          <h3 className="text-xl md:text-2xl tracking-[2px] font-[poppins] mt-1">
             Web Developer | Front End
           </h3>
-          <p className="mt-4">
+          <ul className="flex gap-6 w-full mt-3 font-light justify-center">
+            <li>
+              <i className="fa-solid fa-location-dot"></i> Pakistan
+            </li>
+            <li>
+              <i className="fa-regular fa-hourglass-half"></i> Available Now
+            </li>
+          </ul>
+          {/* <p className="mt-4">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
             voluptas aliquid eligendi adipisci numquam placeat impedit, dolorum
             excepturi possimus repellat!
-          </p>
+          </p> */}
         </div>
         <iframe
-          className="w-[12vh] md:w-[14vh] lg:w-[17vh]"
+          className="w-[14vh] md:w-[17vh]"
           src="https://lottie.host/embed/54c7c6a6-bfe0-47ae-8cca-c7081a16a8d6/UAYyoBila5.lottie"
         ></iframe>
       </div>
