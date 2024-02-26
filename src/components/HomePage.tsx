@@ -9,10 +9,10 @@ function HomePage() {
             src="src\assets\IMG_2497.jpeg"
             alt="portrait"
           />
-          <h1 className="text-4xl md:text-6xl mt-2 font-[poppins] font-semibold">
+          <h1 className="text-4xl poppins md:text-6xl mt-2 font-medium">
             Umar Farooq
           </h1>
-          <h3 className="text-xl md:text-2xl  tracking-[2px] font-[poppins] mt-1">
+          <h3 className="text-xl md:text-2xl poppins mt-1">
             Web Developer | Front End
           </h3>
           <ul className="flex gap-6 text-base w-full mt-2 md:mt-4 font-light justify-center">
@@ -36,7 +36,7 @@ function HomePage() {
 function Header() {
   return (
     <div className="header flex flex-col gap-0.5 md:flex-row justify-between items-center w-full px-4 md:px-20 lg:px-24 md:pt-3">
-      <div className="heading text-xl md:text-2xl font-medium font-[poppins]">
+      <div className="heading text-xl md:text-2xl font-medium poppins">
         Portfolio.
       </div>
       <ul className="menu-items text-base flex gap-2 sm:gap-6">
