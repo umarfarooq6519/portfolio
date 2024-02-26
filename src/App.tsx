@@ -4,7 +4,7 @@ import AboutPage from "./components/AboutPage";
 
 function App() {
   return (
-    <section className="flex flex-col spacer layer1 gap-14 md:gap-20 tracking-wide  text-center  App text-base text-[#132043] md:text-lg">
+    <section className="flex flex-col spacer layer1 gap-14 md:gap-20 tracking-wide  text-center  App text-base text-[#132043ef] md:text-lg">
       <HomePage />
       <Expertise />
       <AboutPage />

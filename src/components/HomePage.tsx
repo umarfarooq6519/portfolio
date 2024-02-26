@@ -15,7 +15,7 @@ function HomePage() {
           <h3 className="text-xl md:text-2xl poppins mt-1">
             Web Developer | Front End
           </h3>
-          <ul className="flex gap-6 text-base w-full mt-2 md:mt-4 font-light justify-center">
+          <ul className="flex gap-6 text-base w-full mt-2 md:mt-3 justify-center">
             <li>
               <i className="fa-solid fa-location-dot"></i> Pakistan
             </li>
@@ -25,7 +25,7 @@ function HomePage() {
           </ul>
         </div>
         <iframe
-          className="w-[12vh] lg:w-[16vh]"
+          className="w-[12vh] lg:w-[16vh] opacity-90"
           src="https://lottie.host/embed/54c7c6a6-bfe0-47ae-8cca-c7081a16a8d6/UAYyoBila5.lottie"
         ></iframe>
       </div>
@@ -39,7 +39,7 @@ function Header() {
       <div className="heading text-xl md:text-2xl font-medium poppins">
         Portfolio.
       </div>
-      <ul className="menu-items text-base flex gap-2 sm:gap-6">
+      <ul className="menu-items text-base tracking-wider flex gap-2 sm:gap-6">
         <li>About</li>/<li>Projects</li>/<li>Contact</li>
       </ul>
     </div>

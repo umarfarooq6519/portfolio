@@ -1,11 +1,13 @@
 export default function AboutPage() {
   return (
     <section className="sectionAbout">
-      <div className="container leading-relaxed px-2 md:px-10 flex flex-col lg:flex-row justify-around gap-2 w-full h-full">
+      <div className="container leading-relaxed px-2 md:px-10 flex flex-col lg:flex-row justify-center gap-3 lg:gap-10 w-full h-full">
         <div className="flex flex-col">
-          <div className="border bg-[#fffa] shadow-lg p-6 lg:px-20 lg:py-10 rounded-3xl justify-center items-center flex flex-col">
-            <h3 className="text-2xl md:text-3xl poppins">About Me</h3>
-            <p className="para max-w-2xl pt-4 font-light text-justify ">
+          <div className="border shadow-lg p-6 lg:px-20 lg:py-10 rounded-3xl justify-center items-center flex flex-col">
+            <h3 className="text-2xl md:text-3xl poppins font-medium">
+              About Me
+            </h3>
+            <p className="max-w-2xl pt-4 text-justify ">
               Hello there! I'm Umar, a frontend web developer based in Pakistan,
               currently studying Bachelor of Computer Sciences at UMT. With over
               2 years of experience in the field, I've been transforming ideas
@@ -15,7 +17,7 @@ export default function AboutPage() {
               create, and since then, I've been crafting immersive and
               user-friendly websites.
             </p>
-            <ul className="gap-2 sm:gap-6 mt-6 md:mt-10 text-base justify-center items-center flex">
+            <ul className="gap-2 sm:gap-6 mt-6 md:mt-10 tracking-wider text-base justify-center items-center flex">
               <li>
                 <a href="https://github.com/umarfarooq6519" target="_blank">
                   <i className="fa-brands fa-github fa-xl"></i> Github
@@ -42,19 +44,19 @@ export default function AboutPage() {
             </ul>
           </div>
         </div>
-        <ul className="skills flex flex-col justify-between gap-2 md:gap-5 text-base flex">
-          <li className="border bg-[#fffa] shadow-lg rounded-3xl flex flex-col justify-center items-center px-10 py-8 md:px-14 md:py-12">
+        <ul className="skills flex flex-col justify-between gap-3 lg:gap-5 text-base flex">
+          <li className="border  shadow-lg rounded-3xl flex flex-col justify-center items-center px-10 py-8 md:px-14 md:py-12">
             <i className="fa-solid fa-medal fa-xl mb-4"></i>
-            <b className=" font-normal text-lg poppins pb-0.5">Experience</b>
-            <p className="font-light">2+ years</p>
-            <p className="font-light">Frontend Development</p>
+            <b className="font-medium text-lg poppins pb-0.5">Experience</b>
+            <p className="">2+ years</p>
+            <p className="">Frontend Development</p>
           </li>
 
-          <li className="border bg-[#fffa] shadow-lg rounded-3xl flex flex-col justify-center items-center px-10 py-8 md:px-14 md:py-12">
+          <li className="border shadow-lg rounded-3xl flex flex-col justify-center items-center px-10 py-8 md:px-14 md:py-12">
             <i className="fa-solid fa-user-graduate fa-xl mb-4"></i>
-            <b className=" font-normal text-lg poppins pb-0.5">Education</b>
-            <p className="font-light">UMT (2021-2025)</p>
-            <p className="font-light">Bachelor of Computer Sciences</p>
+            <b className="font-medium text-lg poppins pb-0.5">Education</b>
+            <p>UMT (2021-2025)</p>
+            <p>Bachelor of Computer Sciences</p>
           </li>
         </ul>
       </div>
