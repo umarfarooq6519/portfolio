@@ -1,6 +1,6 @@
 function HomePage() {
   return (
-    <section className="sectionHome bg-[#EEEDEB] h-[97vh] border-b rounded-b-[4em] md:rounded-b-[8em] spacer layer1">
+    <section className="sectionHome shadow-lg h-[97vh] border-b rounded-b-[4em] md:rounded-b-[8em]">
       <div className="container leading-relaxed md:leading-loose flex flex-col h-full py-3 md:py-6 w-full flex justify-between items-center">
         <Header></Header>
         <div className="home-mid w-5/6 md:w-3/6">
@@ -12,7 +12,7 @@ function HomePage() {
           <h1 className="text-4xl md:text-6xl mt-2 font-[poppins] font-semibold">
             Umar Farooq
           </h1>
-          <h3 className="text-xl md:text-2xl tracking-[2px] font-[poppins] mt-1">
+          <h3 className="text-xl md:text-2xl  tracking-[2px] font-[poppins] mt-1">
             Web Developer | Front End
           </h3>
           <ul className="flex gap-6 text-base w-full mt-2 md:mt-4 font-light justify-center">
@@ -25,7 +25,7 @@ function HomePage() {
           </ul>
         </div>
         <iframe
-          className="w-[12vh] border-2 md:w-[14vh] lg:w-[17vh]"
+          className="w-[12vh] lg:w-[16vh]"
           src="https://lottie.host/embed/54c7c6a6-bfe0-47ae-8cca-c7081a16a8d6/UAYyoBila5.lottie"
         ></iframe>
       </div>
@@ -36,7 +36,7 @@ function HomePage() {
 function Header() {
   return (
     <div className="header flex flex-col gap-0.5 md:flex-row justify-between items-center w-full px-4 md:px-20 lg:px-24 md:pt-3">
-      <div className="heading text-2xl font-semibold font-[poppins]">
+      <div className="heading text-xl md:text-2xl font-medium font-[poppins]">
         Portfolio.
       </div>
       <ul className="menu-items text-base flex gap-2 sm:gap-6">
