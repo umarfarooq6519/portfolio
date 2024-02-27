@@ -7,7 +7,7 @@ export default function AboutPage() {
             <h3 className="text-2xl md:text-3xl poppins font-medium">
               About Me
             </h3>
-            <p className="max-w-2xl pt-4 text-justify ">
+            <p className="max-w-2xl pt-3 text-justify ">
               Hello there! I'm Umar, a frontend web developer based in Pakistan,
               currently studying Bachelor of Computer Sciences at UMT. With over
               2 years of experience in the field, I've been transforming ideas
@@ -45,7 +45,7 @@ export default function AboutPage() {
           </div>
         </div>
         <ul className="skills flex flex-col justify-between gap-3 lg:gap-5 text-base flex">
-          <li className="border  shadow-lg rounded-3xl flex flex-col justify-center items-center px-10 py-8 md:px-14 md:py-12">
+          <li className="border shadow-lg rounded-3xl flex flex-col justify-center items-center px-10 py-8 md:px-14 md:py-12">
             <i className="fa-solid fa-medal fa-xl mb-4"></i>
             <b className="font-medium text-lg poppins pb-0.5">Experience</b>
             <p className="">2+ years</p>
