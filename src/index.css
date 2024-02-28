@@ -10,10 +10,14 @@ body {
   background-size: cover;
 }
 
-.layer1 {
+/* .layer1 {
   background-image: url("./assets/nnnoise.svg");
-}
+} */
 
 .poppins {
   font-family: "poppins", sans-serif;
+}
+
+.faded {
+  color: #132043af;
 }

@@ -1,6 +1,6 @@
 function HomePage() {
   return (
-    <section className="sectionHome shadow-lg h-[97vh] border-b rounded-b-[4em] md:rounded-b-[8em]">
+    <section className="sectionHome h-screen">
       <div className="container leading-relaxed md:leading-loose flex flex-col h-full py-3 md:py-6 w-full flex justify-between items-center">
         <Header></Header>
         <div className="home-mid w-5/6 md:w-3/6">
@@ -15,12 +15,14 @@ function HomePage() {
           <h3 className="text-xl md:text-2xl poppins mt-1">
             Web Developer | Front End
           </h3>
-          <ul className="flex gap-6 text-base w-full mt-2 md:mt-3 justify-center">
+          <ul className="flex gap-6 text-base font-light w-full mt-2 md:mt-3 justify-center">
             <li>
-              <i className="fa-solid fa-location-dot"></i> Pakistan
+              <i className="fa-solid fa-location-dot mr-1"></i>
+              <span>Pakistan</span>
             </li>
             <li>
-              <i className="fa-regular fa-hourglass-half"></i> Available Now
+              <i className="fa-regular fa-hourglass-half mr-1"></i>
+              <span>Available Now</span>
             </li>
           </ul>
         </div>
@@ -39,7 +41,7 @@ function Header() {
       <div className="heading text-xl md:text-2xl font-medium poppins">
         Portfolio.
       </div>
-      <ul className="menu-items text-base tracking-wider flex gap-2 sm:gap-6">
+      <ul className="menu-items text-base tracking-wide flex gap-2 sm:gap-6">
         <li>About</li>/<li>Projects</li>/<li>Contact</li>
       </ul>
     </div>
