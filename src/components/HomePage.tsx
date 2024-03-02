@@ -1,8 +1,25 @@
 function HomePage() {
+  const navBar = ["About", "/", "Projects", "/", "Contact"];
+
+  function MenuBar() {
+    return (
+      <div className="header flex flex-col gap-0.5 md:flex-row justify-between items-center w-full px-4 md:px-20 lg:px-24 md:pt-3">
+        <div className="heading text-xl md:text-2xl font-medium poppins">
+          Portfolio.
+        </div>
+        <ul className="menu-items text-base tracking-wide flex gap-2 sm:gap-6">
+          {navBar.map((item) => (
+            <li>{item}</li>
+          ))}
+        </ul>
+      </div>
+    );
+  }
+
   return (
     <section className="sectionHome h-screen">
       <div className="container leading-relaxed md:leading-loose flex flex-col h-full py-3 md:py-6 w-full flex justify-between items-center">
-        <Header></Header>
+        <MenuBar></MenuBar>
         <div className="home-mid w-5/6 md:w-3/6">
           <img
             className="inline-block w-28 md:w-36 mt-4 sm:mt-0 rounded-full ring-1 ring-[#132043]"
@@ -32,19 +49,6 @@ function HomePage() {
         ></iframe>
       </div>
     </section>
-  );
-}
-
-function Header() {
-  return (
-    <div className="header flex flex-col gap-0.5 md:flex-row justify-between items-center w-full px-4 md:px-20 lg:px-24 md:pt-3">
-      <div className="heading text-xl md:text-2xl font-medium poppins">
-        Portfolio.
-      </div>
-      <ul className="menu-items text-base tracking-wide flex gap-2 sm:gap-6">
-        <li>About</li>/<li>Projects</li>/<li>Contact</li>
-      </ul>
-    </div>
   );
 }
 

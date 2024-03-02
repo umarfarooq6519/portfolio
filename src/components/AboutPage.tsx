@@ -1,4 +1,44 @@
 export default function AboutPage() {
+  const Links = [
+    //About section links list
+    {
+      id: 1,
+      icon: "fa-brands fa-github fa-xl mr-2",
+      href: "https://github.com/umarfarooq6519",
+      text: "Github",
+    },
+    {
+      id: 2,
+      icon: "fa-brands fa-linkedin fa-xl mr-2",
+      href: "https://www.linkedin.com/in/umar-farooq-325811255/",
+      text: "Linkedin",
+    },
+    {
+      id: 3,
+      icon: "fa-brands fa-upwork fa-xl mr-2",
+      href: "https://www.upwork.com/freelancers/~018e9328fc604635b6",
+      text: "Upwork",
+    },
+  ];
+
+  const LinkList = () => {
+    //function to print about section links list
+    return (
+      <>
+        {Links.map((link) => (
+          <li key={link.id}>
+            <i className={link.icon}></i>
+            <a href={link.href} target="_blank">
+              <span className="hover:text-[#132043bf] hover:border-b border-b-[#1320438f] py-1">
+                {link.text}
+              </span>
+            </a>
+          </li>
+        ))}
+      </>
+    );
+  };
+
   return (
     <section className="section-About flex flex-col gap-4 md:gap-8">
       <div className="about-headings">
@@ -19,38 +59,7 @@ export default function AboutPage() {
             user-friendly websites.
           </p>
           <ul className="gap-3 sm:gap-6 pt-6 md:pt-5 tracking-wide text-base flex border-t justify-center md:justify-left">
-            <li>
-              <i className="fa-brands fa-github fa-xl mr-2"></i>
-              <a href="https://github.com/umarfarooq6519" target="_blank">
-                <span className="hover:text-[#132043bf] hover:border-b border-b-[#1320438f] py-1">
-                  Github
-                </span>
-              </a>
-            </li>
-            /
-            <li>
-              <i className="fa-brands fa-linkedin fa-xl mr-2"></i>
-              <a
-                href="https://www.linkedin.com/in/umar-farooq-325811255/"
-                target="_blank"
-              >
-                <span className="hover:text-[#132043bf] hover:border-b border-b-[#1320438f] py-1">
-                  Linkedin
-                </span>
-              </a>
-            </li>
-            /
-            <li>
-              <i className="fa-brands fa-upwork fa-xl mr-2"></i>
-              <a
-                href="https://www.upwork.com/freelancers/~018e9328fc604635b6"
-                target="_blank"
-              >
-                <span className="hover:text-[#132043bf] hover:border-b border-b-[#1320438f] py-1">
-                  Upwork
-                </span>
-              </a>
-            </li>
+            <LinkList />
           </ul>
         </div>
         <ul className="skills flex flex-col justify-between gap-3 lg:gap-5 text-base flex">
