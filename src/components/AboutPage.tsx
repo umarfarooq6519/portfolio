@@ -20,8 +20,8 @@ export default function AboutPage() {
           </p>
           <ul className="gap-3 sm:gap-6 pt-6 md:pt-5 tracking-wide text-base flex border-t justify-center md:justify-left">
             <li>
+              <i className="fa-brands fa-github fa-xl mr-2"></i>
               <a href="https://github.com/umarfarooq6519" target="_blank">
-                <i className="fa-brands fa-github fa-xl mr-2"></i>
                 <span className="hover:text-[#132043bf] hover:border-b border-b-[#1320438f] py-1">
                   Github
                 </span>
@@ -29,11 +29,11 @@ export default function AboutPage() {
             </li>
             /
             <li>
+              <i className="fa-brands fa-linkedin fa-xl mr-2"></i>
               <a
                 href="https://www.linkedin.com/in/umar-farooq-325811255/"
                 target="_blank"
               >
-                <i className="fa-brands fa-linkedin fa-xl mr-2"></i>
                 <span className="hover:text-[#132043bf] hover:border-b border-b-[#1320438f] py-1">
                   Linkedin
                 </span>
@@ -41,11 +41,11 @@ export default function AboutPage() {
             </li>
             /
             <li>
+              <i className="fa-brands fa-upwork fa-xl mr-2"></i>
               <a
                 href="https://www.upwork.com/freelancers/~018e9328fc604635b6"
                 target="_blank"
               >
-                <i className="fa-brands fa-upwork fa-xl mr-2"></i>
                 <span className="hover:text-[#132043bf] hover:border-b border-b-[#1320438f] py-1">
                   Upwork
                 </span>

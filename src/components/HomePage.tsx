@@ -18,11 +18,11 @@ function HomePage() {
           <ul className="flex gap-6 text-base font-light w-full mt-2 md:mt-3 justify-center">
             <li>
               <i className="fa-solid fa-location-dot mr-1"></i>
-              <span>Pakistan</span>
+              <span className="faded">Pakistan</span>
             </li>
             <li>
               <i className="fa-regular fa-hourglass-half mr-1"></i>
-              <span>Available Now</span>
+              <span className="faded">Available Now</span>
             </li>
           </ul>
         </div>

@@ -21,8 +21,13 @@ export default function ContactPage() {
             </a>
           </li>
           <li>
-            <span className="hover:text-[#132043bf]">
-              <i className="fa-solid fa-clipboard fa-xl"></i>
+            <span
+              className="hover:text-[#132043bf]"
+              onClick={() => {
+                navigator.clipboard.writeText(email);
+              }}
+            >
+              <i className="fa-solid fa-clipboard fa-lg"></i>
             </span>
           </li>
         </ul>
@@ -36,8 +41,13 @@ export default function ContactPage() {
             </a>
           </li>
           <li>
-            <span className="hover:text-[#132043bf]">
-              <i className="fa-solid fa-clipboard fa-xl"></i>
+            <span
+              className="hover:text-[#132043bf]"
+              onClick={() => {
+                navigator.clipboard.writeText('+92 3244298602');
+              }}
+            >
+              <i className="fa-solid fa-clipboard fa-lg"></i>
             </span>
           </li>
         </ul>
@@ -50,7 +60,7 @@ export default function ContactPage() {
           <li>
             <i className="fa-brands fa-upwork fa-xl mr-2"></i>
             <a
-              href="https://www.upwork.com/freelancers/~018e9328fc604635b6"
+              href="https://www.upwork.com/services/product/development-it-front-end-website-using-html-css-javascript-animations-and-styling-1756304190940692480?ref=fl_profile"
               target="_blank"
             >
               <span className="hover:text-[#132043bf] hover:border-b border-b-[#1320438f] py-1">
@@ -62,6 +72,10 @@ export default function ContactPage() {
       </div>
     </section>
   );
+}
+
+function copyToClipboard(text: string) {
+  navigator.clipboard.writeText(text);
 }
 
 const email = "umar_farooq52@outlook.com";
