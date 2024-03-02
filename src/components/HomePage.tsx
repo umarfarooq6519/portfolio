@@ -43,7 +43,7 @@ function HomePage() {
             src={portrait}
             alt="portrait"
           />
-          <h1 className="text-4xl poppins md:text-6xl mt-2 font-medium">
+          <h1 className="text-4xl poppins md:text-6xl mt-2 font-semibold">
             Umar Farooq
           </h1>
           <h3 className="text-xl md:text-2xl poppins mt-1">
