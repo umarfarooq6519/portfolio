@@ -2,7 +2,7 @@ import { useState } from "react";
 
 export default function ContactPage() {
   const email = "umar_farooq52@outlook.com";
-  const whatsapp = "+92 324 4298602";
+  const whatsapp = "+923244298602";
   const emailPath = `mailto:${email}`;
   const whatsappPath = `https://wa.me/${whatsapp}`;
 
