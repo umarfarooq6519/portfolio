@@ -1,3 +1,5 @@
+import portrait from "../assets/IMG_2497.jpeg";
+
 function HomePage() {
   const navBar = ["About", "/", "Projects", "/", "Contact"];
 
@@ -23,7 +25,7 @@ function HomePage() {
         <div className="home-mid w-5/6 md:w-3/6">
           <img
             className="inline-block w-28 md:w-36 mt-4 sm:mt-0 rounded-full ring-1 ring-[#132043]"
-            src="src\assets\IMG_2497.jpeg"
+            src={portrait}
             alt="portrait"
           />
           <h1 className="text-4xl poppins md:text-6xl mt-2 font-medium">
