@@ -1,19 +1,31 @@
 import portrait from "../assets/IMG_2497.jpeg";
+import resume from "../assets/resume.pdf";
 
 function HomePage() {
-  const navBar = ["About", "/", "Projects", "/", "Contact"];
-
+  // const navBar = ["About", "/", "Projects", "/", "Contact"];
   function MenuBar() {
     return (
-      <div className="header flex flex-col gap-0.5 md:flex-row justify-between items-center w-full px-4 md:px-20 lg:px-24 md:pt-3">
+      <div className="header flex justify-between items-center w-full px-6 pt-2 md:px-20 lg:px-24 md:pt-3">
         <div className="heading text-xl md:text-2xl font-medium poppins">
           Portfolio.
         </div>
-        <ul className="menu-items text-base tracking-wide flex gap-2 sm:gap-6">
+        <span className="border bg-gray-50 poppins text-base border-gray-400 rounded-xl py-1 px-4 ">
+          <a
+            href={resume}
+            download="umar_resume"
+            target="_blank"
+            rel="noreferrer"
+            className="hover:text-[#132043bf]"
+          >
+            My Résumé
+          </a>
+          <i className="fa-solid fa-up-right-from-square ml-2"></i>
+        </span>
+        {/* <ul className="menu-items text-base tracking-wide flex gap-2 sm:gap-6">
           {navBar.map((item) => (
             <li>{item}</li>
           ))}
-        </ul>
+        </ul> */}
       </div>
     );
   }
@@ -34,14 +46,14 @@ function HomePage() {
           <h3 className="text-xl md:text-2xl poppins mt-1">
             Web Developer | Front End
           </h3>
-          <ul className="flex gap-6 text-base font-light w-full mt-2 md:mt-3 justify-center">
+          <ul className="flex gap-6 font-light text-base w-full mt-2 md:mt-3 justify-center">
             <li>
               <i className="fa-solid fa-location-dot mr-1"></i>
-              <span className="faded">Pakistan</span>
+              <span>Pakistan</span>
             </li>
             <li>
               <i className="fa-regular fa-hourglass-half mr-1"></i>
-              <span className="faded">Available Now</span>
+              <span>Available Now</span>
             </li>
           </ul>
         </div>

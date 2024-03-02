@@ -1,4 +1,7 @@
 export default function AboutPage() {
+  const fancyBox =
+    "border-2 bg-gray-50 border-gray-400 rounded-3xl flex flex-col justify-center items-center px-10 py-8 md:px-12 md:py-8";
+
   const Links = [
     //About section links list
     {
@@ -58,9 +61,10 @@ export default function AboutPage() {
       <div className="about-container flex flex-col px-4 md:px-10 md:flex-row justify-center gap-10 md:gap-20">
         <div className="about-left flex justify-center flex-col">
           <p className="max-w-xl text-justify  pb-6 md:pb-5 leading-relaxed">
-            Hey Peeps! I'm Umar, a frontend web developer based in Pakistan,
-            currently studying Bachelor of Computer Sciences at UMT. With over 2
-            years of experience in the field, I've been transforming ideas into
+            <h4 className="faded poppins text-base">Why Me?</h4>
+            I'm Umar, a frontend web developer based in Pakistan, currently
+            studying Bachelor of Computer Sciences at UMT. With over 2 years of
+            experience in the field, I've been transforming ideas into
             captivating digital experiences right in the browser.
             <br />
             <br /> My journey into web development began with a deep-seated
@@ -72,14 +76,14 @@ export default function AboutPage() {
           </ul>
         </div>
         <ul className="skills flex flex-col justify-between gap-3 lg:gap-5 text-base flex">
-          <li className="border-2 bg-gray-50 border-gray-400 rounded-[25px] flex flex-col justify-center items-center px-10 py-8 md:px-12 md:py-8">
+          <li className={fancyBox}>
             <i className="fa-solid fa-medal fa-xl mb-4"></i>
             <b className="font-medium text-lg poppins pb-0.5">Experience</b>
             <p className="">2+ years</p>
             <p className="">Frontend Development</p>
           </li>
 
-          <li className="border-2 bg-gray-50 border-gray-400 rounded-[25px] flex flex-col justify-center items-center px-10 py-8 md:px-12 md:py-8">
+          <li className={fancyBox}>
             <i className="fa-solid fa-user-graduate fa-xl mb-4"></i>
             <b className="font-medium text-lg poppins pb-0.5">Education</b>
             <p>UMT (2021-2025)</p>

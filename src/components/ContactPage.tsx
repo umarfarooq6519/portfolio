@@ -3,10 +3,13 @@ import { useState } from "react";
 export default function ContactPage() {
   const email = "umar_farooq52@outlook.com";
   const whatsapp = "+92 324 4298602";
+  const emailPath = `mailto:${email}`;
+  const whatsappPath = `https://wa.me/${whatsapp}`;
+
   const upworkLink =
     "https://www.upwork.com/services/product/development-it-front-end-website-using-html-css-javascript-animations-and-styling-1756304190940692480?ref=fl_profile";
   const fancyBox =
-    "border-2 bg-gray-50 border-gray-400 rounded-[25px] w-full py-6 px-8 flex";
+    "border-2 bg-gray-50 border-gray-400 rounded-3xl w-full py-5 px-6 flex";
 
   type SetState<T> = React.Dispatch<React.SetStateAction<T>>;
   const [emailState, setEmailState] = useState(true); //copyToClipboard state
@@ -42,7 +45,7 @@ export default function ContactPage() {
         <div className={`${fancyBox} justify-between`}>
           <span>
             <i className="fa-solid fa-envelope fa-xl mr-2"></i>
-            <a href="mailto:`{email}`">
+            <a href={emailPath}>
               <span className="hover:text-[#132043bf] hover:border-b border-b-[#1320438f] py-1">
                 Email me
               </span>
@@ -59,7 +62,7 @@ export default function ContactPage() {
         <div className={`${fancyBox} justify-between`}>
           <span>
             <i className="fa-brands fa-whatsapp fa-xl mr-2"></i>
-            <a href={"https://wa.me/" + whatsapp} target="_blank">
+            <a href={whatsappPath} target="_blank">
               <span className="hover:text-[#132043bf] hover:border-b border-b-[#1320438f] py-1">
                 Whatsapp
               </span>
