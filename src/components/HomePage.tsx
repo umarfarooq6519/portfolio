@@ -3,6 +3,9 @@ import resume from "../assets/resume.pdf";
 
 function HomePage() {
   // const navBar = ["About", "/", "Projects", "/", "Contact"];
+  const scrollGif =
+    "https://lottie.host/embed/54c7c6a6-bfe0-47ae-8cca-c7081a16a8d6/UAYyoBila5.lottie";
+
   function MenuBar() {
     return (
       <div className="header flex justify-between items-center w-full px-6 pt-2 md:px-20 lg:px-24 md:pt-3">
@@ -58,8 +61,8 @@ function HomePage() {
           </ul>
         </div>
         <iframe
-          className="w-[12vh] lg:w-[16vh] opacity-90"
-          src="https://lottie.host/embed/54c7c6a6-bfe0-47ae-8cca-c7081a16a8d6/UAYyoBila5.lottie"
+          className="w-[13vh] lg:w-[16vh] opacity-90"
+          src={scrollGif}
         ></iframe>
       </div>
     </section>
