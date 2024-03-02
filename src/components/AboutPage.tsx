@@ -9,12 +9,21 @@ export default function AboutPage() {
     },
     {
       id: 2,
-      icon: "fa-brands fa-linkedin fa-xl mr-2",
-      href: "https://www.linkedin.com/in/umar-farooq-325811255/",
-      text: "Linkedin",
+      text: "/",
     },
     {
       id: 3,
+      icon: "fa-brands fa-linkedin fa-xl mr-2",
+      href: "https://www.linkedin.com/in/umar-farooq-325811255/",
+      text: "Linkedin",
+      slash: "/",
+    },
+    {
+      id: 4,
+      text: "/",
+    },
+    {
+      id: 5,
       icon: "fa-brands fa-upwork fa-xl mr-2",
       href: "https://www.upwork.com/freelancers/~018e9328fc604635b6",
       text: "Upwork",
@@ -58,7 +67,7 @@ export default function AboutPage() {
             desire to create, and since then, I've been crafting immersive and
             user-friendly websites.
           </p>
-          <ul className="gap-3 sm:gap-6 pt-6 md:pt-5 tracking-wide text-base flex border-t justify-center md:justify-left">
+          <ul className="gap-3 sm:gap-6 pt-6 md:pt-5 tracking-wide text-base flex border-t justify-center">
             <LinkList />
           </ul>
         </div>
