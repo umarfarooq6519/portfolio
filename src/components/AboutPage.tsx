@@ -1,6 +1,6 @@
 export default function AboutPage() {
   const fancyBox =
-    "border-2 bg-gray-50 border-gray-400 rounded-3xl flex flex-col justify-center items-center px-10 py-8 md:px-12 md:py-8";
+    "border-2 bg-gray-50 border-gray-400 rounded-3xl flex flex-col justify-center items-center px-10 py-8 lg:px-12 lg:py-8";
 
   const Links = [
     //About section links list
@@ -58,10 +58,10 @@ export default function AboutPage() {
         <h3 className="text-3xl md:text-4xl poppins font-medium">About Me</h3>
       </div>
 
-      <div className="about-container flex flex-col px-4 md:px-10 md:flex-row justify-center gap-10 md:gap-20">
+      <div className="about-container flex flex-col px-4 md:px-10 md:flex-row justify-center gap-8 lg:gap-20">
         <div className="about-left flex justify-center flex-col">
           <p className="max-w-xl text-justify  pb-6 md:pb-5 leading-relaxed">
-            <h4 className="faded poppins text-base">Why Me?</h4>
+            <h4 className="faded">Why Me?</h4>
             I'm Umar, a frontend web developer based in Pakistan, currently
             studying Bachelor of Computer Sciences at UMT. With over 2 years of
             experience in the field, I've been transforming ideas into
