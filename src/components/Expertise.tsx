@@ -1,4 +1,7 @@
 export default function Expertise() {
+  const fancyBox =
+    "border-2 bg-gray-50 border-gray-400 rounded-3xl flex flex-col gap-1 items-center px-8 py-6";
+
   const expertiseItems = [
     {
       id: 1,
@@ -71,7 +74,7 @@ export default function Expertise() {
   ];
 
   return (
-    <section className="section-expertise flex flex-col gap-8 md:gap-10 xl:gap-14">
+    <section className="section-expertise flex flex-col gap-8 md:gap-10 xl:gap-14 px-4 lg:px-10">
       <div className="expertise-headings">
         <h4 className="text-base faded poppins">Explore my</h4>
         <h3 className="text-3xl md:text-4xl poppins font-medium">Expertise</h3>
@@ -101,6 +104,40 @@ export default function Expertise() {
             </div>
           </div>
         ))}
+      </div>
+
+      <div className="expertise-2 pt-8 flex flex-col lg:flex-row gap-3 justify-center items-center xl:gap-20">
+        <div className={`${fancyBox} max-w-sm`}>
+          <h4 className="poppins font-medium text-xl">
+            <i className="fa-solid fa-wand-magic-sparkles mr-1"></i>
+            Responsive Design
+          </h4>
+          <p className="text-base text-justify">
+            I create web applications that maintain their polished appearance
+            across all devices, ensuring a seamless user experience regardless
+            of the platform.
+          </p>
+        </div>
+        <div className={`${fancyBox} max-w-sm`}>
+          <h4 className="poppins font-medium text-xl">
+            <i className="fa-solid fa-magnifying-glass-chart mr-1"></i>
+            SEO
+          </h4>
+          <p className="text-base text-justify">
+            I build lightning-fast websites along with search engine optimized
+            content using the best practices to deliver impactful results for
+            your business.
+          </p>
+        </div>
+        <div className={`${fancyBox} max-w-sm`}>
+          <h4 className="poppins font-medium text-xl">
+            <i className="fa-solid fa-comments mr-1"></i> Communication
+          </h4>
+          <p className="text-base text-justify">
+            I will make sure that I have effective communication with my client,
+            ensuring clear understanding of project requirements and objectives.
+          </p>
+        </div>
       </div>
       <div className="tooltips poppins">
         {expertiseItems.flatMap((expertise) =>

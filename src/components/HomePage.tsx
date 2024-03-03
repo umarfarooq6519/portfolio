@@ -12,7 +12,7 @@ function HomePage() {
         <div className="heading text-xl md:text-2xl font-medium poppins">
           Portfolio.
         </div>
-        <span className="border bg-gray-50 poppins text-base border-gray-400 rounded-xl py-1 px-4 ">
+        <span className="border bg-gray-50 poppins text-sm border-gray-400 rounded-xl py-2 px-6">
           <a
             href={resume}
             download="umar_resume"
@@ -37,7 +37,7 @@ function HomePage() {
     <section className="sectionHome h-screen">
       <div className="container leading-relaxed md:leading-loose flex flex-col h-full py-3 md:py-6 w-full flex justify-between items-center">
         <MenuBar></MenuBar>
-        <div className="home-mid w-5/6 md:w-3/6">
+        <div className="home-mid w-5/6 md:w-3/6 flex flex-col items-center">
           <img
             className="inline-block w-28 md:w-36 mt-4 sm:mt-0 rounded-full ring-1 ring-[#132043]"
             src={portrait}
