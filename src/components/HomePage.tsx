@@ -1,5 +1,5 @@
-import portrait from "../assets/IMG_2497.jpeg";
-import resume from "../assets/resume.pdf";
+import portrait from "../../Public/IMG_2497.jpeg";
+import resume from "../../Public/Resume.pdf";
 
 function HomePage() {
   // const navBar = ["About", "/", "Projects", "/", "Contact"];
