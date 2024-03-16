@@ -106,7 +106,7 @@ export default function Expertise() {
         ))}
       </div>
 
-      <div className="expertise-2 pt-8 flex flex-col lg:flex-row gap-3 justify-center items-center xl:gap-20">
+      <div className="expertise-2 pt-8 flex flex-col lg:flex-row gap-8 justify-center items-center xl:gap-20">
         <div className={`${fancyBox} max-w-sm`}>
           <h4 className="poppins font-medium text-xl">
             <i className="fa-solid fa-wand-magic-sparkles mr-1"></i>

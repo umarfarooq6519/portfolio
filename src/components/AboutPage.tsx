@@ -52,7 +52,7 @@ export default function AboutPage() {
   };
 
   return (
-    <section className="section-About flex flex-col gap-4 md:gap-8">
+    <section className="section-About flex flex-col gap-4 md:gap-10">
       <div className="about-headings">
         <h4 className="text-base faded poppins">Get to know</h4>
         <h3 className="text-3xl md:text-4xl poppins font-medium">About Me</h3>
@@ -62,14 +62,16 @@ export default function AboutPage() {
         <div className="about-left flex justify-center flex-col">
           <p className="max-w-xl text-justify  pb-6 md:pb-5 leading-relaxed">
             <h4 className="faded">Why Me?</h4>
-            I'm Umar, a frontend web developer based in Pakistan, currently
-            studying Bachelor of Computer Sciences at UMT. With over 2 years of
-            experience in the field, I've been transforming ideas into
-            captivating digital experiences right in the browser.
+            Hey! I'm Umar, a Web Developer with over 2+ years of hands-on
+            experience in crafting dynamic and user-centric websites. I bring
+            ideas to life in the browser.
             <br />
-            <br /> My journey into web development began with a deep-seated
-            desire to create, and since then, I've been crafting immersive and
-            user-friendly websites.
+            <br />
+            What sets me apart from others is the dedicated concentration on the
+            websites purpose. I prioritize understanding the intended use of the
+            website and how the user will interact with the interface.I maintain
+            ongoing communication with my clients to ensure a clear
+            understanding of their requirements.
           </p>
           <ul className="gap-3 sm:gap-6 pt-6 md:pt-5 tracking-wide text-base flex border-t justify-center">
             <LinkList />
