@@ -8,8 +8,7 @@ export default function ContactPage() {
 
   const upworkLink =
     "https://www.upwork.com/services/product/development-it-front-end-website-using-html-css-javascript-animations-and-styling-1756304190940692480?ref=fl_profile";
-  const fancyBox =
-    "border-2 bg-gray-50 border-gray-400 rounded-3xl w-full py-5 px-6 flex";
+  const fancyBox = "bg-neutral-content rounded-3xl w-full py-5 px-6 flex";
 
   type SetState<T> = React.Dispatch<React.SetStateAction<T>>;
   const [emailState, setEmailState] = useState(true); //copyToClipboard state

@@ -1,6 +1,6 @@
 export default function Expertise() {
   const fancyBox =
-    "border-2 bg-gray-50 border-gray-400 rounded-3xl flex flex-col gap-1 items-center px-8 py-6";
+    "bg-neutral-content rounded-3xl flex flex-col gap-3 items-center px-10 py-8";
 
   const expertiseItems = [
     {
@@ -106,13 +106,13 @@ export default function Expertise() {
         ))}
       </div>
 
-      <div className="expertise-2 pt-8 flex flex-col lg:flex-row gap-8 justify-center items-center xl:gap-20">
+      <div className="expertise-2 pt-12 flex flex-col lg:flex-row gap-8 justify-center items-center xl:gap-20">
         <div className={`${fancyBox} max-w-sm`}>
           <h4 className="poppins font-medium text-xl">
-            <i className="fa-solid fa-wand-magic-sparkles mr-1"></i>
+            <i className="fa-solid fa-wand-magic-sparkles fa-lg mr-2"></i>
             Responsive Design
           </h4>
-          <p className="text-base text-justify">
+          <p className="text-base text-justify leading-relaxed">
             I create web applications that maintain their polished appearance
             across all devices, ensuring a seamless user experience regardless
             of the platform.
@@ -120,10 +120,10 @@ export default function Expertise() {
         </div>
         <div className={`${fancyBox} max-w-sm`}>
           <h4 className="poppins font-medium text-xl">
-            <i className="fa-solid fa-magnifying-glass-chart mr-1"></i>
-            SEO
+            <i className="fa-solid fa-magnifying-glass-chart fa-lg mr-2"></i>
+            Search Optimization
           </h4>
-          <p className="text-base text-justify">
+          <p className="text-base text-justify leading-relaxed">
             I build lightning-fast websites along with search engine optimized
             content using the best practices to deliver impactful results for
             your business.
@@ -131,9 +131,9 @@ export default function Expertise() {
         </div>
         <div className={`${fancyBox} max-w-sm`}>
           <h4 className="poppins font-medium text-xl">
-            <i className="fa-solid fa-comments mr-1"></i> Communication
+            <i className="fa-solid fa-comments fa-lg mr-2"></i> Communication
           </h4>
-          <p className="text-base text-justify">
+          <p className="text-base text-justify leading-relaxed">
             I will make sure that I have effective communication with my client,
             ensuring clear understanding of project requirements and objectives.
           </p>

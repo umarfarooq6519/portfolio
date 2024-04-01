@@ -12,7 +12,7 @@ function HomePage() {
         <div className="heading text-xl md:text-2xl font-medium poppins">
           Portfolio.
         </div>
-        <span className="border bg-gray-50 poppins text-sm border-gray-400 rounded-xl py-2 px-6">
+        <span className="bg-neutral-content poppins text-sm rounded-xl py-2 px-6">
           <a
             href={resume}
             download="umar_resume"

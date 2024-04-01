@@ -1,6 +1,6 @@
 export default function AboutPage() {
   const fancyBox =
-    "border-2 bg-gray-50 border-gray-400 rounded-3xl flex flex-col justify-center items-center px-10 py-8 lg:px-12 lg:py-8";
+    "bg-neutral-content rounded-3xl flex flex-col justify-center items-center px-10 py-8 lg:px-12 lg:py-10";
 
   const Links = [
     //About section links list
@@ -52,18 +52,17 @@ export default function AboutPage() {
   };
 
   return (
-    <section className="section-About flex flex-col gap-4 md:gap-10">
+    <section className="section-About flex flex-col gap-8 md:gap-16">
       <div className="about-headings">
         <h4 className="text-base faded poppins">Get to know</h4>
         <h3 className="text-3xl md:text-4xl poppins font-medium">About Me</h3>
       </div>
 
       <div className="about-container flex flex-col px-4 md:px-10 md:flex-row justify-center gap-8 lg:gap-20">
-        <div className="about-left flex justify-center flex-col">
+        <div className="about-left flex justify-center flex-col gap-1 md:gap-4">
           <p className="max-w-xl text-justify  pb-6 md:pb-5 leading-relaxed">
-            <h4 className="faded">Why Me?</h4>
             Hey! I'm Umar, a Web Developer with over 2+ years of hands-on
-            experience in crafting dynamic and user-centric websites. I bring
+            experience in crafting dynamic and user-focused websites, bringing
             ideas to life in the browser.
             <br />
             <br />
@@ -73,11 +72,11 @@ export default function AboutPage() {
             ongoing communication with my clients to ensure a clear
             understanding of their requirements.
           </p>
-          <ul className="gap-3 sm:gap-6 pt-6 md:pt-5 tracking-wide text-base flex border-t justify-center">
+          <ul className="gap-3 sm:gap-6 pt-8 md:pt-10 tracking-wide text-base flex border-t justify-center">
             <LinkList />
           </ul>
         </div>
-        <ul className="skills flex flex-col justify-between gap-3 lg:gap-5 text-base flex">
+        <ul className="skills flex flex-col mt-10 md:mt-0 justify-between gap-3 lg:gap-5 text-base flex">
           <li className={fancyBox}>
             <i className="fa-solid fa-medal fa-xl mb-4"></i>
             <b className="font-medium text-lg poppins pb-0.5">Experience</b>
