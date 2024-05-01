@@ -15,7 +15,7 @@ function HomePage() {
         <span className="bg-neutral-content poppins text-sm rounded-xl py-2 px-6">
           <a
             href={resume}
-            download="umar_resume"
+            download="resume"
             target="_blank"
             rel="noreferrer"
             className="hover:text-[#132043bf]"
