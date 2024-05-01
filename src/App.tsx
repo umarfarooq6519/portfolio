@@ -6,7 +6,7 @@ import Footer from "./components/Footer";
 
 function App() {
   return (
-    <section className="flex flex-col spacer layer1 gap-20 lg:gap-28  text-center  App text-base text-base-content md:text-lg">
+    <section className="flex flex-col items-center justify-center w-full spacer layer1 gap-20 lg:gap-28 text-center App text-base text-base-content md:text-lg">
       <HomePage />
       <hr />
       <AboutPage />

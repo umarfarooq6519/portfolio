@@ -34,8 +34,8 @@ function HomePage() {
   }
 
   return (
-    <section className="sectionHome h-screen">
-      <div className="container leading-relaxed md:leading-loose flex flex-col h-full py-3 md:py-6 w-full flex justify-between items-center">
+    <section className="sectionHome h-screen w-full">
+      <div className=" leading-relaxed md:leading-loose flex flex-col h-full py-3 md:py-6 w-full flex justify-between items-center border-2">
         <MenuBar></MenuBar>
         <div className="home-mid w-5/6 md:w-3/6 flex flex-col items-center">
           <img
