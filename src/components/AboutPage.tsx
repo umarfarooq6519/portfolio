@@ -52,7 +52,7 @@ export default function AboutPage() {
   };
 
   return (
-    <section className="section-About flex flex-col gap-8 md:gap-16 border-2">
+    <section className="section-About flex flex-col gap-8 md:gap-16">
       <div className="about-headings">
         <h4 className="text-base faded poppins">Get to know</h4>
         <h3 className="text-3xl md:text-4xl poppins font-medium">About Me</h3>
