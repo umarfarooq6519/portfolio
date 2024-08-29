@@ -1,26 +1,26 @@
 export default function Contact() {
   return (
     <section id="contact" className="">
-      <div className="bg-primary text-secondary container grid grid-rows-12 rounded-md">
-        <div className="content row-span-10 flex items-center justify-center py-44">
-          <div className="uppercase">
-            <h3>
-              <span className="mr-2 font-light italic">©</span>Umar
-            </h3>
-            <h3>Farooq</h3>
-          </div>
+      <div className="container grid grid-cols-12 p-32">
+        <div className="content col-span-6">
+          <h3 className="">Contact</h3>
+          <h4 className="mt-24">
+            Lets talk about ideas, <br /> design & inspiration.
+          </h4>
+          <button className="mt-20 font-[450] uppercase">
+            <span>[</span>
+            <span className="pl-2">E-mail</span>
+            <span>
+              <i className="fa-solid fa-arrow-up-right-from-square fa-xs px-2"></i>
+            </span>
+            <span>]</span>
+          </button>
         </div>
-        <div className="wrapper row-span-2 flex items-center px-10">
-          <ul className="font-body flex w-full items-center justify-between uppercase">
-            <li>© 2024</li>
-            <li>
-              E-mail
-              <i className="fa-solid fa-arrow-up-right-from-square fa-xs pl-2"></i>
-            </li>
-            <li>github</li>
-            <li>upwork</li>
-            <li>linkedin</li>
-          </ul>
+        <div className="wrapper col-span-6 flex items-center justify-center">
+          <div className="dim-text">
+            <i className="fa-solid fa-circle fa-2xs pr-3 text-lime-400 opacity-100"></i>
+            Available for work!
+          </div>
         </div>
       </div>
     </section>

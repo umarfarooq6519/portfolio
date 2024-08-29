@@ -27,7 +27,7 @@ export default function Home() {
         </header>
 
         {/* home > content col-12 */}
-        <div className="main grid grid-cols-12 py-20 text-left">
+        <div className="main grid grid-cols-12 py-32 text-left">
           {/* content > col span 1 */}
           <div className="wrapper col-span-1 mb-3 flex items-end">© 2024</div>
           {/* content > col span 9 */}

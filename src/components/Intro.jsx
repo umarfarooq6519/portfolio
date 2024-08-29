@@ -2,7 +2,7 @@ export default function Intro() {
   return (
     <section id="intro" className="">
       {/* container > 12 cols */}
-      <div className="container grid min-h-screen grid-cols-12 px-32 py-20">
+      <div className="container grid grid-cols-12 px-32 py-20">
         {/* content > span 8 */}
         <div className="content col-span-8 flex flex-col items-start">
           <h4>
@@ -25,7 +25,7 @@ export default function Intro() {
           <div className="dim-text">
             *Born, raised and
             <br />
-            <span className="">based in Pakistan</span>
+            based in Pakistan
           </div>
         </div>
       </div>
