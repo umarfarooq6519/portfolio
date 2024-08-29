@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  font-size: 16px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@layer base {
+  h1 {
+    @apply font-display text-[11rem] font-semibold leading-[85%] tracking-tight;
+  }
+  h3 {
+    @apply font-display text-[8rem] leading-[85%] tracking-tight;
+  }
+  p {
+    @apply font-body text-[1.3rem] font-[350] leading-8 tracking-wider;
+  }
+}
+
+.dim-text {
+  @apply text-[1.5rem] font-[350] leading-9 opacity-40;
+}
