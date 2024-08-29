@@ -15,14 +15,20 @@ html {
   h1 {
     @apply font-display text-[11rem] font-semibold leading-[85%] tracking-tight;
   }
-  h3 {
+  h2 {
     @apply font-display text-[8rem] leading-[85%] tracking-tight;
   }
+  h3 {
+    @apply font-display text-[7rem] font-semibold leading-[75%] tracking-tight;
+  }
+  h4 {
+    @apply text-[2.6rem] font-[450] leading-[140%] tracking-wide;
+  }
   p {
-    @apply font-body text-[1.3rem] font-[350] leading-8 tracking-wider;
+    @apply font-body text-[1.3rem] font-[400] leading-8 tracking-wider;
   }
 }
 
 .dim-text {
-  @apply text-[1.5rem] font-[350] leading-9 opacity-40;
+  @apply text-[1.5rem] font-[400] leading-9 opacity-40;
 }

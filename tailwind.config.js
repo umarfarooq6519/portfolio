@@ -13,6 +13,10 @@ export default {
         primary: "#222222", //dark
         secondary: "#EEEEEE", //light
       },
+      // ############## container centering
+      container: {
+        center: true,
+      },
     },
   },
   plugins: [],
