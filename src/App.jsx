@@ -1,17 +1,18 @@
-import Home from "./components/Home";
-import Intro from "./components/Intro";
+import { Outlet } from "react-router-dom";
+
 import Footer from "./components/Footer";
-import Contact from "./components/Contact";
+import Header from "./components/Header";
 
 export default function App() {
   return (
     <section
       id="App"
-      className="bg-secondary font-body text-primary p-5 text-base"
+      className="bg-secondary layout font-body text-primary p-5 text-base"
     >
-      <Home />
-      <Intro />
-      <Contact />
+      <Header />
+      {/* <HomePage /> */}
+      <Outlet />
+
       <Footer />
     </section>
   );

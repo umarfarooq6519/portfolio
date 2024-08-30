@@ -13,22 +13,45 @@ html {
 
 @layer base {
   h1 {
-    @apply font-display text-[11rem] font-semibold leading-[85%] tracking-tight;
+    @apply font-display text-[11rem] font-semibold uppercase leading-[85%] tracking-tight;
   }
   h2 {
     @apply font-display text-[8rem] leading-[85%] tracking-tight;
   }
   h3 {
-    @apply font-display text-[7rem] uppercase font-semibold leading-[75%] tracking-tight;
+    @apply font-display text-[7rem] font-semibold uppercase leading-[75%] tracking-tight;
   }
   h4 {
-    @apply text-[2.6rem] font-[450] leading-[140%] tracking-wide;
+    @apply font-display text-[5.7rem] font-[450] uppercase leading-[115%] tracking-tight;
+  }
+  h5 {
+    @apply text-[2.6rem] font-[450] leading-[130%] tracking-wide;
   }
   p {
     @apply font-body text-[1.3rem] font-[400] leading-8 tracking-wider;
   }
+  ul {
+    @apply flex w-full items-center justify-between text-sm font-[450] uppercase;
+  }
 }
 
 .dim-text {
-  @apply text-[1.5rem] font-[400] leading-9 text-gray-400
+  @apply text-[1.5rem] font-[400] leading-9 text-gray-400;
+}
+
+/* overlay texture */
+.layout:before {
+  background-image: url(/bg-grain.webp);
+  background-position: 50%;
+  background-position-x: 50%;
+  background-position-y: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  content: "";
+  height: 100vh;
+  inset: 0;
+  mix-blend-mode: multiply;
+  pointer-events: none;
+  position: fixed;
+  width: 100vw;
 }

@@ -10,8 +10,8 @@ export default {
       },
       // ############## color pallete
       colors: {
-        primary: "#222222", //dark
-        secondary: "#EEEEEE", //light
+        primary: "#1C1C1C", //dark
+        secondary: "#FFFFFF", //light
       },
       // ############## container centering
       container: {
