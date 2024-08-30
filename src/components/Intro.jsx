@@ -1,3 +1,5 @@
+/* eslint-disable react/no-unescaped-entities */
+
 import Button from "./elements/Button";
 
 export default function Intro() {
@@ -16,6 +18,7 @@ export default function Intro() {
           <div className="mt-20">
             <Button
               text="About"
+              link="/about"
               icon={
                 <i className="fa-solid fa-arrow-up-right-from-square fa-xs px-2"></i>
               }

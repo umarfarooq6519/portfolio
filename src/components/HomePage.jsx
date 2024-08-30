@@ -1,3 +1,4 @@
+import Contact from "./Contact";
 import Intro from "./Intro";
 
 const starIcon = "/star.svg";
@@ -34,6 +35,7 @@ function HomePage() {
         </div>
       </section>
       <Intro />
+      <Contact />
     </>
   );
 }

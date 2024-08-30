@@ -1,3 +1,9 @@
+/* eslint-disable react/no-unescaped-entities */
+
+import Button from "./elements/Button";
+
+const emailURL = "mailto:umar_farooq52@outlook.com";
+
 export default function Contact() {
   return (
     // Home > Contact Section
@@ -9,14 +15,16 @@ export default function Contact() {
           <h5 className="mt-24">
             Let's discuss your ideas, <br /> design and inspiration.
           </h5>
-          <button className="mt-20 font-[450] uppercase">
-            <span>[</span>
-            <span className="pl-2">E-mail</span>
-            <span>
-              <i className="fa-solid fa-arrow-up-right-from-square fa-xs px-2"></i>
-            </span>
-            <span>]</span>
-          </button>
+
+          <div className="mt-20">
+            <Button
+              text="E-mail"
+              link={emailURL}
+              icon={
+                <i className="fa-solid fa-arrow-up-right-from-square fa-xs px-2"></i>
+              }
+            />
+          </div>
         </div>
         {/* contact > wrapper */}
         <div className="wrapper col-span-6 flex items-center justify-center">

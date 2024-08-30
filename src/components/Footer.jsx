@@ -1,9 +1,12 @@
-import Contact from "./Contact";
+const emailURL = "mailto:umar_farooq52@outlook.com";
+const githubURL = "https://github.com/umarfarooq6519/";
+const upworkURL =
+  "https://www.upwork.com/freelancers/~018e9328fc604635b6?mp_source=share";
+const linkedinURL = "https://www.linkedin.com/in/umar-farooq-325811255/";
 
 export default function Footer() {
   return (
     <>
-      <Contact />
       <section id="footer" className="">
         <div className="bg-primary text-secondary container grid grid-rows-12 rounded-md">
           {/* footer content */}
@@ -20,12 +23,26 @@ export default function Footer() {
             <ul>
               <li>© 2024</li>
               <li>
-                E-mail
-                <i className="fa-solid fa-arrow-up-right-from-square fa-xs pl-2"></i>
+                <a href={emailURL}>
+                  E-mail
+                  <i className="fa-solid fa-arrow-up-right-from-square fa-xs pl-2"></i>
+                </a>
               </li>
-              <li>github</li>
-              <li>upwork</li>
-              <li>linkedin</li>
+              <li>
+                <a href={githubURL} target="_blank">
+                  github
+                </a>
+              </li>
+              <li>
+                <a href={upworkURL} target="_blank">
+                  upwork
+                </a>
+              </li>
+              <li>
+                <a href={linkedinURL} target="_blank">
+                  linkedin
+                </a>
+              </li>
             </ul>
           </div>
         </div>

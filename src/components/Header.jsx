@@ -12,10 +12,10 @@ export default function Header() {
             </Link>
           </li>
           <li>
-            <Link to="/About">about</Link>
+            <Link to="/about">about</Link>
           </li>
           <li>
-            <a href="./">contact</a>
+            <Link to="/contact">Contact</Link>
           </li>
           <li>
             <Button
