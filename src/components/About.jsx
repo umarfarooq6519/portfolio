@@ -1,5 +1,5 @@
 import Contact from "./Contact";
-import Button from "./elements/Button";
+const resumeURL = "/resume.pdf";
 
 export default function About() {
   return (
@@ -21,12 +21,17 @@ export default function About() {
               <div className="grid grid-cols-12">
                 <div className="col-span-8 -mb-52 flex flex-col justify-end">
                   <span className="pb-20 pl-2">
-                    <Button
-                      text="Projects"
-                      icon={
-                        <i className="fa-solid fa-arrow-up-right-from-square fa-xs px-2"></i>
-                      }
-                    />
+                    <button className="font-[450] uppercase">
+                      <a href={resumeURL} download>
+                        <span>[</span>
+                        <span className="pl-2">Résumé </span>
+                        <span>
+                          {" "}
+                          <i className="fa-solid fa-download fa-xs px-2"></i>
+                        </span>
+                        <span>]</span>
+                      </a>
+                    </button>
                   </span>
                   <div className="services">
                     <h4>Custom Websites</h4>

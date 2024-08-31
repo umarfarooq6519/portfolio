@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import Button from "./elements/Button";
+const resumeURL = "/resume.pdf";
 
 export default function Header() {
   return (
@@ -18,12 +18,17 @@ export default function Header() {
             <Link to="/contact">Contact</Link>
           </li>
           <li>
-            <Button
-              text="Résumé"
-              icon={
-                <i className="fa-solid fa-arrow-up-right-from-square fa-xs px-2"></i>
-              }
-            />
+            <button className="font-[450] uppercase">
+              <a href={resumeURL} download>
+                <span>[</span>
+                <span className="pl-2">Résumé </span>
+                <span>
+                  {" "}
+                  <i className="fa-solid fa-download fa-xs px-2"></i>
+                </span>
+                <span>]</span>
+              </a>
+            </button>
           </li>
         </ul>
       </nav>
