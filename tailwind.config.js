@@ -20,6 +20,11 @@ export default {
           "2xl": "1800px",
         },
       },
+      // ############## custom screens
+      screens: {
+        xs: "400px",
+        fhd: "1920px",
+      },
     },
   },
   plugins: [],

@@ -14,18 +14,20 @@ export default function AboutPage() {
     </>
   );
 }
-
+// fhd:left-40 fhd:w-96 relative left-32 z-10 -mb-32 hidden w-80 rounded-lg
 function AboutSection() {
   return (
     <div className="container">
-      <div className="flex justify-center pb-44 pt-24">
+      <div className="flex justify-center pb-24 pt-44">
         <div className="heading -pt-10 flex flex-col items-center">
+          <h1 className="fhd:text-[23rem] text-[5rem] md:text-[20rem]">
+            About
+          </h1>
           <img
             src="/profile.JPEG"
             alt=""
-            className="relative left-32 z-10 -mb-32 w-80 rounded-lg"
+            className="relative -left-16 -top-4 w-72 rounded-lg"
           />
-          <h1 className="text-[20rem]">About</h1>
         </div>
       </div>
     </div>
@@ -34,36 +36,22 @@ function AboutSection() {
 
 function ServicesSection() {
   return (
-    <div id="services-section" className="bg-primary text-secondary -m-5">
-      <div className="container px-10 pt-64">
-        {/* grid cols 12 */}
-        <div className="grid grid-cols-12">
-          {/* span 8 */}
-          <div className="col-span-8 -mb-48 flex flex-col justify-end">
-            <span className="pl-2">
-              <button className="font-[450] uppercase">
-                <a href={resumeURL} download>
-                  <span>[</span>
-                  <span className="pl-2">Résumé </span>
-                  <span>
-                    {" "}
-                    <i className="fa-solid fa-download fa-xs px-2"></i>
-                  </span>
-                  <span>]</span>
-                </a>
-              </button>
-            </span>
-            <div className="services mt-12">
-              <h4>Custom Websites</h4>
-              <h4>Website Redesign</h4>
-              <h4>Design Conversion</h4>
-              <h4 className="text-primary">Animated Visuals</h4>
-              <h4 className="text-primary">Bespoke Website</h4>
+    <div id="services-section" className="bg-primary text-secondary -mx-5">
+      <div className="fhd:pt-80 container px-5 pb-20 pt-32 md:pt-64">
+        <div className="flex flex-col gap-14">
+          <div className="fhd:-mb-52 md:-mb-48">
+            <div className="services mt-0">
+              <h4>Art</h4>
+              <h4>Direction</h4>
+              <h4>Branding</h4>
+              <h4>UX / UI</h4>
+              <h4>Bespoke</h4>
+              <h4>Visuals</h4>
             </div>
           </div>
-          {/* span 4 */}
-          <div className="col-span-4 flex items-start">
-            <p className="text-base">
+
+          <div className="flex items-start">
+            <p className="fhd:text-xl text-base">
               I design and develop websites with a deep understanding of brand
               identity, blending technical expertise with a keen eye for detail.
               My skills allow me to create seamless digital experiences, from
@@ -72,6 +60,19 @@ function ServicesSection() {
               website reflects and communicate the essence of the brand.
             </p>
           </div>
+          <span className="pl-0">
+            <button className="fhd:text-lg text-sm font-[400] uppercase tracking-wider sm:text-base">
+              <a href={resumeURL} download>
+                <span>[</span>
+                <span className="pl-2">Résumé </span>
+                <span>
+                  {" "}
+                  <i className="fa-solid fa-download fa-xs px-2"></i>
+                </span>
+                <span>]</span>
+              </a>
+            </button>
+          </span>
         </div>
       </div>
     </div>
@@ -80,19 +81,19 @@ function ServicesSection() {
 
 function ExperienceSection() {
   return (
-    <div id="experience-section" className="container">
+    <div id="experience-section" className="text-container container">
       {/* grid cols 12 */}
-      <div className="mx-32 grid grid-cols-12 pt-96">
+      <div className="flex flex-col gap-10 pt-0">
         {/* col 8 */}
-        <div className="col-span-8 flex h-full">
+        <div className="flex h-full">
           <h5>
-            I’m Umar, an undergraduate studying Computer Sciences, based in
-            Pakistan with over three years of experience in crafting websites
-            that blend simplicity with distinctiveness.
+            I’m Umar, an undergraduate studying Computer Sciences with over
+            three years of experience in crafting websites that blend simplicity
+            with uniqueness.
           </h5>
         </div>
         {/* col 4 */}
-        <div className="col-span-4 flex justify-center pr-0 pt-1">
+        <div className="flex justify-end pr-0 pt-1">
           <p className="dim-text">
             *Experience & <br /> Education
           </p>

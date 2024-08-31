@@ -10,7 +10,10 @@ export default function Button({ text, icon, link }) {
   };
 
   return (
-    <button className="font-[450] uppercase" onClick={handleScrollToTop}>
+    <button
+      className="fhd:text-xl text-base font-[450] uppercase"
+      onClick={handleScrollToTop}
+    >
       <Link to={link}>
         <span>[</span>
         <span className="pl-2">{text}</span>
