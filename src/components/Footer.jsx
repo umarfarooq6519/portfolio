@@ -9,9 +9,9 @@ export default function Footer() {
     <>
       <div id="footer" className="container">
         {/* grid row 12 */}
-        <div className="bg-primary text-secondary text-container flex flex-col rounded-md !p-0">
+        <div className="text-container flex flex-col rounded-md bg-primary !p-0 text-secondary">
           {/* span 10 */}
-          <div className="content flex items-center justify-center py-40 lg:py-56 xl:py-72">
+          <div className="content flex items-center justify-center py-40 lg:py-56 fhd:py-72">
             <div className="uppercase">
               <h3>
                 <span className="mr-2 font-light italic">©</span>Umar

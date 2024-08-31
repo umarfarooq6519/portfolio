@@ -11,7 +11,7 @@ export default function Button({ text, icon, link }) {
 
   return (
     <button
-      className="fhd:text-xl xs:text-base text-sm font-[450] uppercase md:text-xl lg:max-xl:text-2xl"
+      className="text-sm font-[450] uppercase xs:max-md:text-base md:max-lg:text-lg lg:max-xl:text-2xl fhd:text-lg"
       onClick={handleScrollToTop}
     >
       <Link to={link}>
