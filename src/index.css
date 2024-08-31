@@ -22,7 +22,7 @@ html {
     @apply font-display text-[7rem] font-semibold uppercase leading-[75%] tracking-tight;
   }
   h4 {
-    @apply font-display text-[5.7rem] font-[450] uppercase leading-[115%] tracking-tight;
+    @apply font-display text-[5.3rem] font-[450] uppercase leading-[112%] tracking-tight;
   }
   h5 {
     @apply text-[2.6rem] font-[450] leading-[130%] tracking-wide;
@@ -33,6 +33,10 @@ html {
   ul {
     @apply flex w-full items-center justify-between text-sm font-[450] uppercase;
   }
+}
+
+.text-container {
+  @apply mt-44 px-32;
 }
 
 .dim-text {

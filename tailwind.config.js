@@ -13,9 +13,12 @@ export default {
         primary: "#1C1C1C", //dark
         secondary: "#FFFFFF", //light
       },
-      // ############## container centering
+      // ############## container
       container: {
         center: true,
+        screens: {
+          "2xl": "1800px",
+        },
       },
     },
   },

@@ -10,9 +10,7 @@ export default function App() {
       className="bg-secondary layout font-body text-primary p-5 text-base"
     >
       <Header />
-      {/* <HomePage /> */}
       <Outlet />
-
       <Footer />
     </section>
   );

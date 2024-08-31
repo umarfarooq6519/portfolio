@@ -7,9 +7,10 @@ const linkedinURL = "https://www.linkedin.com/in/umar-farooq-325811255/";
 export default function Footer() {
   return (
     <>
-      <section id="footer" className="">
-        <div className="bg-primary text-secondary container grid grid-rows-12 rounded-md">
-          {/* footer content */}
+      <div id="footer" className="container">
+        {/* grid row 12 */}
+        <div className="bg-primary text-secondary text-container grid grid-rows-12 rounded-md !p-0">
+          {/* span 10 */}
           <div className="content row-span-10 flex items-center justify-center py-40">
             <div className="uppercase">
               <h3>
@@ -18,8 +19,8 @@ export default function Footer() {
               <h3>Farooq</h3>
             </div>
           </div>
-          {/* footer nav */}
-          <div className="wrapper row-span-2 flex items-center px-10">
+          {/* span 2 */}
+          <div className="wrapper row-span-2 flex items-center px-14">
             <ul>
               <li>© 2024</li>
               <li>
@@ -46,7 +47,7 @@ export default function Footer() {
             </ul>
           </div>
         </div>
-      </section>
+      </div>
     </>
   );
 }

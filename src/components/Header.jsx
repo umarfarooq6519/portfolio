@@ -3,8 +3,8 @@ const resumeURL = "/resume.pdf";
 
 export default function Header() {
   return (
-    <header className="">
-      <nav>
+    <header>
+      <nav className="container">
         <ul>
           <li>
             <Link to="/">
