@@ -13,34 +13,34 @@ html {
 
 @layer base {
   h1 {
-    @apply font-display fhd:text-[13rem] text-[3.4rem] font-semibold uppercase leading-[85%] tracking-tight sm:text-[4.8rem] md:text-[5.9rem] lg:text-[7.6rem] xl:text-[10rem] 2xl:text-[11rem];
+    @apply font-display fhd:text-[13rem] xs:text-[4rem] text-[3.4rem] font-semibold uppercase leading-[85%] tracking-tight sm:text-[4.8rem] md:text-[5.9rem] lg:text-[8.4rem] xl:text-[10rem] 2xl:text-[11rem];
   }
   h2 {
-    @apply font-display fhd:text-[9.4rem] text-[3rem] leading-[85%] tracking-tight sm:text-[4.6rem] md:text-[5.3rem] lg:text-[6.8rem] xl:text-[8.2rem] 2xl:text-[8.9rem];
+    @apply font-display fhd:text-[9.4rem] xs:text-[3.3rem] text-[3rem] leading-[85%] tracking-tight sm:text-[4.6rem] md:text-[5.3rem] lg:text-[7rem] xl:text-[8.2rem] 2xl:text-[8.9rem];
   }
   h3 {
-    @apply font-display fhd:text-[8rem] text-[3.2rem] font-semibold uppercase leading-[75%] tracking-tight sm:text-[3.2rem] md:text-[4rem] lg:text-[5rem] xl:text-[6.3rem] 2xl:text-[7rem];
+    @apply font-display fhd:text-[8rem] text-[3.2rem] font-semibold uppercase leading-[80%] tracking-tight sm:text-[3.2rem] md:text-[4rem] lg:text-[5rem] xl:text-[6.3rem] 2xl:text-[7rem];
   }
   h4 {
-    @apply font-display fhd:text-[6rem] text-[3rem] font-[550] uppercase leading-[100%] tracking-tight;
+    @apply font-display xs:text-[3.2rem] text-[3rem] font-[550] uppercase leading-[100%] tracking-tight md:text-[5rem] lg:text-[6rem] xl:text-[9rem];
   }
   h5 {
-    @apply fhd:text-[3.2rem] text-[1.5rem] font-[450] leading-[125%] md:text-[1.6rem] lg:text-[1.8rem] xl:text-[2.3rem] 2xl:text-[2.6rem];
+    @apply fhd:text-[3.2rem] text-[1.5rem] font-[450] leading-[125%] tracking-tight md:text-[2rem] lg:text-[2.8rem] xl:text-[2.3rem] 2xl:text-[2.6rem];
   }
   p {
-    @apply font-body fhd:text-[1.6rem] text-[1rem] font-normal leading-6 tracking-wider sm:text-[1rem] xl:text-[1.2rem] 2xl:text-[1.3rem];
+    @apply font-body fhd:text-[1.6rem] xs:text-[1.1rem] text-[1rem] font-normal leading-6 tracking-wider sm:text-[1rem] md:text-[1.2rem] lg:text-[1.7rem] lg:leading-8 xl:text-[1.2rem] 2xl:text-[1.3rem];
   }
   ul {
-    @apply fhd:text-lg flex w-full items-center justify-between text-sm font-[450] uppercase;
+    @apply fhd:text-lg xs:text-base flex w-full items-center justify-between text-sm font-[450] uppercase md:text-lg lg:text-2xl xl:text-sm;
   }
 }
 
 .text-container {
-  @apply mt-20 px-2 md:px-16 lg:mt-44 lg:px-24 xl:px-32;
+  @apply mt-20 px-2 md:mt-36 md:px-10 lg:mt-44 lg:px-14 xl:mt-52 xl:px-32;
 }
 
 .dim-text {
-  @apply fhd:text-[1.8rem] text-[1.1rem] font-[400] leading-6 text-gray-400;
+  @apply fhd:text-[1.8rem] xs:text-[1.2rem] text-[1.1rem] font-[400] leading-6 text-gray-400 md:text-[1.4rem] lg:text-[2rem] lg:leading-9;
 }
 
 /* overlay texture */

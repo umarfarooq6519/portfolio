@@ -21,7 +21,7 @@ function HeroSection() {
     // wrapper(1) | content(9) | wrapper(2)
     <div id="hero-section" className="container">
       {/* grid col 12 */}
-      <div className="fhd:py-44 items-left flex flex-col justify-center gap-20 py-32">
+      <div className="items-left flex flex-col justify-center gap-20 py-32 lg:max-xl:py-80 xl:py-28 2xl:py-20">
         {/* col span 1 */}
 
         {/* col span 9 */}
@@ -88,8 +88,10 @@ function IntroSection() {
 
 function Bespoke() {
   return (
-    <div className="wrapper bg-primary text-secondary row-span-0 -m-5 mt-0 flex items-center justify-center py-12">
-      <span className="text-2xl font-[450] uppercase">bespoke development</span>
+    <div className="wrapper bg-primary text-secondary row-span-0 -mx-4 flex items-center justify-center py-12 lg:py-20 lg:max-xl:-mx-8">
+      <span className="xs:text-3xl text-2xl font-[450] uppercase md:text-5xl lg:text-6xl xl:text-8xl">
+        bespoke development
+      </span>
     </div>
   );
 }

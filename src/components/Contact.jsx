@@ -15,7 +15,7 @@ export default function Contact() {
             Let's discuss your ideas, <br /> design and inspiration.
           </h5>
           <div className="wrapper justify-left mt-5 flex items-center">
-            <div className="dim-text">
+            <div className="dim-text w-full xl:-mt-32 xl:text-right">
               <i className="fa-solid fa-circle fa-2xs fa-beat pr-3 text-sm text-lime-400 opacity-100"></i>
               Available for work!
             </div>

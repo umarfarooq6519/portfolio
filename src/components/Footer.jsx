@@ -11,7 +11,7 @@ export default function Footer() {
         {/* grid row 12 */}
         <div className="bg-primary text-secondary text-container flex flex-col rounded-md !p-0">
           {/* span 10 */}
-          <div className="content fhd:py-48 flex items-center justify-center py-40">
+          <div className="content flex items-center justify-center py-40 lg:py-56 xl:py-72">
             <div className="uppercase">
               <h3>
                 <span className="mr-2 font-light italic">©</span>Umar
@@ -20,10 +20,16 @@ export default function Footer() {
             </div>
           </div>
           {/* span 2 */}
-          <div className="wrapper flex items-center p-5 md:px-14">
-            <ul className="flex flex-col gap-5">
-              <li>
+          <div className="wrapper flex items-center py-4 md:px-14">
+            <ul className="flex gap-5 max-lg:flex-col">
+              <li className="lg:hidden">
                 <a href={emailURL}>umar_farooq52@outlook.com</a>
+              </li>
+              <li className="max-lg:hidden">
+                <a href={emailURL}>
+                  E-mail
+                  <i className="fa-solid fa-arrow-up-right-from-square fa-xs pl-2"></i>
+                </a>
               </li>
               <li>
                 <a href={linkedinURL} target="_blank">
@@ -40,7 +46,7 @@ export default function Footer() {
                   github
                 </a>
               </li>
-              <li className="mt-5">© 2024</li>
+              <li className="max-lg:mt-10">© 2024</li>
             </ul>
           </div>
         </div>

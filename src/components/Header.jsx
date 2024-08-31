@@ -5,13 +5,12 @@ export default function Header() {
   return (
     <header>
       <nav className="container">
-        <ul>
+        <ul className="flex">
           <li>
             <Link to="/">
               <b>Umar</b> farooq
             </Link>
           </li>
-          <i className="fa-solid fa-bars fa-xl"></i>
           <ul className="hidden">
             <li>
               <Link to="/about">about</Link>
