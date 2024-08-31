@@ -4,6 +4,8 @@ const upworkURL =
   "https://www.upwork.com/freelancers/~018e9328fc604635b6?mp_source=share";
 const linkedinURL = "https://www.linkedin.com/in/umar-farooq-325811255/";
 
+const arrow_up_right = "/arrow-up-right-light.svg";
+
 export default function Footer() {
   return (
     <>
@@ -22,14 +24,8 @@ export default function Footer() {
           {/* span 2 */}
           <div className="wrapper flex items-center py-4 md:px-14">
             <ul className="flex gap-5 max-lg:flex-col">
-              <li className="lg:hidden">
-                <a href={emailURL}>umar_farooq52@outlook.com</a>
-              </li>
-              <li className="max-lg:hidden">
-                <a href={emailURL}>
-                  E-mail
-                  <i className="fa-solid fa-arrow-up-right-from-square fa-xs pl-2"></i>
-                </a>
+              <li>
+                <a href={emailURL}>mail@outlook</a>
               </li>
               <li>
                 <a href={linkedinURL} target="_blank">

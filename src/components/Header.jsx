@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 const resumeURL = "/resume.pdf";
+const menu = "/menu.svg";
 
 export default function Header() {
   return (
@@ -11,6 +12,7 @@ export default function Header() {
               <b>Umar</b> farooq
             </Link>
           </li>
+          <img src={menu} alt="" className="w-6" />
           <ul className="hidden">
             <li>
               <Link to="/about">about</Link>
