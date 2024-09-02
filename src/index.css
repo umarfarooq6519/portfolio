@@ -27,6 +27,9 @@ html {
   h5 {
     @apply text-[1.5rem] font-[450] leading-[125%] tracking-tight md:text-[2rem] lg:text-[2.8rem] xl:text-[2.3rem] 2xl:text-[2.6rem] fhd:text-[3.2rem];
   }
+  h6 {
+    @apply font-body text-[4rem] font-medium leading-7;
+  }
   p {
     @apply font-body text-[1rem] font-normal leading-6 tracking-wider xs:text-[1.1rem] sm:text-[1rem] md:text-[1.2rem] lg:text-[1.7rem] lg:leading-8 xl:text-[1.2rem] 2xl:text-[1.3rem] fhd:text-[1.6rem];
   }

@@ -1,19 +1,43 @@
+/* eslint-disable react/prop-types */
+
 import { Link } from "react-router-dom";
+import { useState } from "react";
+import ButtonHref from "./elements/ButtonHref";
+const menuSVG = "/menu.svg";
+const crossSVG = "/cross.svg";
 const resumeURL = "/resume.pdf";
-const menu = "/menu.svg";
+const linkedinURL = "https://www.linkedin.com/in/umar-farooq-325811255/";
 
 export default function Header() {
+  // ######### manage menu state and function
+  const [menuOpen, setMenuOpen] = useState(false);
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+    console.log("Menu state changed");
+  };
+
   return (
     <header>
       <nav className="container">
-        <ul className="flex">
-          <li>
+        <ul>
+          <li className={`z-50 ${menuOpen && "text-secondary"} `}>
             <Link to="/">
               <b>Umar</b> farooq
             </Link>
           </li>
-          <img src={menu} alt="" className="w-6" />
-          <ul className="hidden">
+          {/* ########### mobile menu button */}
+
+          <li className="md:hidden">
+            <button type="button" onClick={toggleMenu}>
+              <img src={menuSVG} alt="menu" className="h-7 w-7 md:h-8 md:w-8" />
+            </button>
+          </li>
+
+          {/* Full-Screen Menu */}
+          {menuOpen && <MenuSection toggleMenu={toggleMenu} />}
+
+          {/* ########### laptop menu */}
+          <ul className="w-8/12 max-md:hidden">
             <li>
               <Link to="/about">about</Link>
             </li>
@@ -21,21 +45,57 @@ export default function Header() {
               <Link to="/contact">Contact</Link>
             </li>
             <li>
-              <button className="font-[450] uppercase">
-                <a href={resumeURL} download>
-                  <span>[</span>
-                  <span className="pl-2">Résumé </span>
-                  <span>
-                    {" "}
-                    <i className="fa-solid fa-download fa-xs px-2"></i>
-                  </span>
-                  <span>]</span>
-                </a>
-              </button>
+              <ButtonHref text="Résumé" href={resumeURL} theme="light" />
             </li>
           </ul>
         </ul>
       </nav>
     </header>
+  );
+}
+
+function MenuSection({ toggleMenu }) {
+  return (
+    <div className="fixed inset-0 z-20 flex flex-col justify-center gap-28 bg-primary px-3 text-secondary">
+      <button
+        type="button"
+        className="absolute right-4 top-4 text-2xl"
+        onClick={toggleMenu}
+      >
+        <img src={crossSVG} alt="menu" className="mt-2 h-7 w-7 md:h-8 md:w-8" />
+        {/* This is the close button */}
+      </button>
+      <ul className="flex flex-col gap-16">
+        <li className="w-full">
+          <a href="#home" onClick={toggleMenu}>
+            <h6>Home</h6>
+          </a>
+        </li>
+        <li className="w-full">
+          <Link to="/about" onClick={toggleMenu}>
+            <h6>About</h6>
+          </Link>
+        </li>
+        <li className="w-full">
+          <a href="#services" onClick={toggleMenu}>
+            <Link to="/contact" onClick={toggleMenu}>
+              <h6>Contact</h6>
+            </Link>
+          </a>
+        </li>
+      </ul>
+
+      <ul className="flex flex-col gap-4 text-base font-normal">
+        <li className="w-full">
+          <ButtonHref text="Résumé" href={resumeURL} theme="dark" />
+        </li>
+        <li className="w-full">
+          <ButtonHref text="Linkedin" href={linkedinURL} theme="dark" />
+        </li>
+        <li className="w-full">
+          <i>©</i> 2024
+        </li>
+      </ul>
+    </div>
   );
 }

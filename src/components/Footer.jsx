@@ -4,8 +4,6 @@ const upworkURL =
   "https://www.upwork.com/freelancers/~018e9328fc604635b6?mp_source=share";
 const linkedinURL = "https://www.linkedin.com/in/umar-farooq-325811255/";
 
-const arrow_up_right = "/arrow-up-right-light.svg";
-
 export default function Footer() {
   return (
     <>

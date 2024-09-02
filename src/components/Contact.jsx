@@ -1,6 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 
-import Button from "./elements/Button";
+import ButtonLink from "./elements/ButtonLink";
 const emailURL = "mailto:umar_farooq52@outlook.com";
 
 export default function Contact() {
@@ -22,13 +22,7 @@ export default function Contact() {
           </div>
         </div>
         <div className="mt-8">
-          <Button
-            text="E-mail"
-            link={emailURL}
-            icon={
-              <i className="fa-solid fa-arrow-up-right-from-square fa-xs px-2"></i>
-            }
-          />
+          <ButtonLink text="E-mail" link={emailURL} />
         </div>
       </div>
     </div>

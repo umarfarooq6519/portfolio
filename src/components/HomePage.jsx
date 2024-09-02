@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 
 import ContactPage from "./Contact";
-import Button from "./elements/Button";
+import ButtonLink from "./elements/ButtonLink";
 const starIcon = "/star.svg";
 
 function HomePage() {
@@ -62,7 +62,7 @@ function IntroSection() {
             your digital footprint stand out.
           </h5>
           <div className="wrapper flex w-full items-start justify-between">
-            <Button
+            <ButtonLink
               text="About"
               link="/about"
               icon={

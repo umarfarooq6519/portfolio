@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 const arrow_up_right = "/arrow-up-right-dark.svg";
 
 /* eslint-disable react/prop-types */
-export default function Button({ text, icon, link }) {
+export default function ButtonLink({ text, link }) {
   const handleScrollToTop = () => {
     // Check if the link contains '/'
     if (link.startsWith("/")) {

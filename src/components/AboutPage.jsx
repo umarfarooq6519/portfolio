@@ -1,4 +1,5 @@
 import Contact from "./Contact";
+import ButtonHref from "./elements/ButtonHref";
 const resumeURL = "/resume.pdf";
 const arrow_up_right = "/arrow-up-right-light.svg";
 
@@ -64,16 +65,7 @@ function ServicesSection() {
               website reflects and communicate the essence of the brand.
             </p>
             <div className="pl-0 xl:w-full xl:text-left">
-              <button className="text-sm font-[400] uppercase tracking-wider xs:max-md:text-base md:max-lg:text-lg lg:max-xl:text-2xl fhd:text-lg">
-                <a href={resumeURL} download className="flex">
-                  [
-                  <span className="flex gap-1 px-2">
-                    <span>Résumé</span>
-                    <img src={arrow_up_right} className="w-3.5" alt="" />
-                  </span>
-                  ]
-                </a>
-              </button>
+              <ButtonHref text="Résumé" href={resumeURL} theme="dark" />
             </div>
           </div>
         </div>
