@@ -66,7 +66,7 @@ function MenuSection({ toggleMenu }) {
     };
   }, []);
   return (
-    <div className="fixed inset-0 z-20 flex flex-col justify-center gap-28 bg-primary px-3 text-secondary">
+    <div className="fixed inset-0 z-20 flex h-lvh flex-col justify-center gap-28 bg-primary px-3 text-secondary">
       <button
         type="button"
         className="absolute right-4 top-4 text-2xl"
@@ -75,7 +75,7 @@ function MenuSection({ toggleMenu }) {
         <img src={crossSVG} alt="menu" className="mt-2 h-7 w-7 md:h-8 md:w-8" />
         {/* This is the close button */}
       </button>
-      <ul className="flex flex-col gap-16">
+      <ul className="flex flex-col gap-16 max-sm:mt-10">
         <li className="w-full">
           <a href="#home" onClick={toggleMenu}>
             <h6>Home</h6>
