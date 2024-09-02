@@ -1,7 +1,6 @@
 import Contact from "./Contact";
 import ButtonHref from "./elements/ButtonHref";
 const resumeURL = "/resume.pdf";
-const arrow_up_right = "/arrow-up-right-light.svg";
 
 export default function AboutPage() {
   return (

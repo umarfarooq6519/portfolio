@@ -3,6 +3,7 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import ButtonHref from "./elements/ButtonHref";
+import { useEffect } from "react";
 const menuSVG = "/menu.svg";
 const crossSVG = "/cross.svg";
 const resumeURL = "/resume.pdf";
@@ -55,6 +56,15 @@ export default function Header() {
 }
 
 function MenuSection({ toggleMenu }) {
+  useEffect(() => {
+    // Add or remove the overflow-hidden class on the body
+    document.body.style.overflow = "hidden";
+
+    // Clean up the effect when the component unmounts or the menu is closed
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, []);
   return (
     <div className="fixed inset-0 z-20 flex flex-col justify-center gap-28 bg-primary px-3 text-secondary">
       <button
