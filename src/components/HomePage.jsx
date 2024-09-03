@@ -24,12 +24,28 @@ function HeroSection() {
   const isMobile = window.matchMedia("(max-width: 450px)").matches;
 
   return (
-    // wrapper(1) | content(9) | wrapper(2)
     <div id="hero-section" className="container overflow-hidden">
       {/* overflow hidden to hide the starIcon */}
       <div className="items-left flex flex-col justify-center gap-20 py-32 lg:max-xl:py-80 xl:py-28 2xl:py-44">
         <div className="content uppercase max-xl:mt-10 2xl:ml-44">
-          <h2>CREATIVE</h2>
+          <div className="overflow-hidden pt-2">
+            <motion.h2
+              initial={{
+                y: 130,
+              }}
+              animate={{
+                y: 0,
+              }}
+              transition={{
+                duration: 0.5,
+                // type: "spring",
+                ease: "backOut",
+                delay: isMobile ? 0.35 : 0.4,
+              }}
+            >
+              CREATIVE
+            </motion.h2>
+          </div>
           <div className="flex items-center gap-2">
             <motion.div
               initial={{
@@ -51,6 +67,7 @@ function HeroSection() {
                 className="w-8 rotate-12 md:w-14 lg:w-20"
               />{" "}
             </motion.div>
+
             <motion.h1
               initial={{
                 x: isMobile ? -40 : isTablet ? -60 : -80, // depend on screen
@@ -67,7 +84,24 @@ function HeroSection() {
               Website
             </motion.h1>
           </div>
-          <h1>DEVELOPER</h1>
+          <div className="overflow-hidden max-xl:pb-2">
+            <motion.h1
+              initial={{
+                y: -140,
+              }}
+              animate={{
+                y: 0,
+              }}
+              transition={{
+                duration: 0.5,
+                // type: "spring",
+                ease: "backOut",
+                delay: isMobile ? 0.35 : 0.4,
+              }}
+            >
+              Developer
+            </motion.h1>
+          </div>
         </div>
 
         <div className="wrapper flex items-end justify-between pb-0 xl:pt-1 2xl:-mt-48">
