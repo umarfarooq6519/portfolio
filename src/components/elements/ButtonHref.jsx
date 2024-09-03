@@ -9,7 +9,7 @@ export default function ButtonHref({ href, text, theme }) {
   };
 
   return (
-    <button className="font-[450] uppercase">
+    <button className="text-sm font-[450] uppercase xs:max-md:text-base md:max-lg:text-lg lg:max-xl:text-2xl fhd:text-lg">
       <a href={href} download className="flex" target="_blank">
         [
         <span className="flex gap-1 px-2">

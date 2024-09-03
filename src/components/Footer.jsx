@@ -1,8 +1,10 @@
-const emailURL = "mailto:umar_farooq52@outlook.com";
-const githubURL = "https://github.com/umarfarooq6519/";
-const upworkURL =
-  "https://www.upwork.com/freelancers/~018e9328fc604635b6?mp_source=share";
-const linkedinURL = "https://www.linkedin.com/in/umar-farooq-325811255/";
+// const emailURL = "mailto:umar_farooq52@outlook.com";
+// const githubURL = "https://github.com/umarfarooq6519/";
+// const upworkURL =
+//   "https://www.upwork.com/freelancers/~018e9328fc604635b6?mp_source=share";
+// const linkedinURL = "https://www.linkedin.com/in/umar-farooq-325811255/";
+
+import socialLinks from "../links";
 
 export default function Footer() {
   return (
@@ -23,21 +25,21 @@ export default function Footer() {
           <div className="wrapper flex items-center py-4 md:px-14">
             <ul className="flex gap-5 max-lg:flex-col">
               <li>
-                <a href={emailURL}>mail@outlook</a>
+                <a href={socialLinks.email}>mail@outlook</a>
               </li>
               <li>
-                <a href={linkedinURL} target="_blank">
+                <a href={socialLinks.linkedin} target="_blank">
                   linkedin
                 </a>
               </li>
               <li>
-                <a href={upworkURL} target="_blank">
-                  upwork
+                <a href={socialLinks.github} target="_blank">
+                  github
                 </a>
               </li>
               <li>
-                <a href={githubURL} target="_blank">
-                  github
+                <a href={socialLinks.upwork} target="_blank">
+                  upwork
                 </a>
               </li>
               <li className="max-lg:mt-10">© 2024</li>

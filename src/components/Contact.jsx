@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
+import socialLinks from "../links";
 
 import ButtonLink from "./elements/ButtonLink";
-const emailURL = "mailto:umar_farooq52@outlook.com";
 
 export default function Contact() {
   return (
@@ -22,7 +22,7 @@ export default function Contact() {
           </div>
         </div>
         <div className="mt-8">
-          <ButtonLink text="E-mail" link={emailURL} />
+          <ButtonLink text="E-mail" link={socialLinks.email} />
         </div>
       </div>
     </div>

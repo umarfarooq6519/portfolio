@@ -37,10 +37,7 @@ function AboutSection() {
 
 function ServicesSection() {
   return (
-    <div
-      id="services-section"
-      className="-mx-4 bg-primary text-secondary lg:max-xl:-mx-8"
-    >
+    <div id="services-section" className="bg-primary text-secondary">
       <div className="container px-5 pb-20 pt-32 lg:pb-32 lg:pt-56 2xl:px-44 fhd:pt-80">
         <div className="flex gap-14 max-xl:flex-col xl:gap-56">
           <div className="">

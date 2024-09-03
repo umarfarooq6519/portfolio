@@ -4,6 +4,8 @@ import ContactPage from "./Contact";
 import ButtonLink from "./elements/ButtonLink";
 const starIcon = "/star.svg";
 
+import { motion } from "framer-motion";
+
 function HomePage() {
   return (
     <section id="home-page">
@@ -17,24 +19,58 @@ function HomePage() {
 }
 
 function HeroSection() {
+  // check if tablet/mobile screen (for framer motion)
+  const isTablet = window.matchMedia("(max-width: 900px)").matches;
+  const isMobile = window.matchMedia("(max-width: 450px)").matches;
+
   return (
     // wrapper(1) | content(9) | wrapper(2)
-    <div id="hero-section" className="container">
+    <div id="hero-section" className="container overflow-hidden">
+      {/* overflow hidden to hide the starIcon */}
       <div className="items-left flex flex-col justify-center gap-20 py-32 lg:max-xl:py-80 xl:py-28 2xl:py-44">
         <div className="content uppercase max-xl:mt-10 2xl:ml-44">
           <h2>CREATIVE</h2>
-          <h1 className="flex items-center gap-2">
-            <img
-              src={starIcon}
-              alt=""
-              className="w-8 rotate-12 md:w-14 lg:w-20"
-            />{" "}
-            WEBSITE
-          </h1>
+          <div className="flex items-center gap-2">
+            <motion.div
+              initial={{
+                rotate: "0deg",
+                x: isMobile ? -50 : isTablet ? -110 : -280, //depend on screen
+              }}
+              animate={{
+                rotate: "180deg",
+                x: 0,
+              }}
+              transition={{
+                duration: 1,
+                ease: "backInOut",
+              }}
+            >
+              <motion.img
+                src={starIcon}
+                alt=""
+                className="w-8 rotate-12 md:w-14 lg:w-20"
+              />{" "}
+            </motion.div>
+            <motion.h1
+              initial={{
+                x: isMobile ? -40 : isTablet ? -60 : -80, // depend on screen
+              }}
+              animate={{
+                x: 0,
+              }}
+              transition={{
+                duration: 0.6,
+                ease: "backOut",
+                delay: 0.4,
+              }}
+            >
+              Website
+            </motion.h1>
+          </div>
           <h1>DEVELOPER</h1>
         </div>
 
-        <div className="wrapper flex items-end justify-between pb-0 2xl:-mt-48 xl:pt-1">
+        <div className="wrapper flex items-end justify-between pb-0 xl:pt-1 2xl:-mt-48">
           <div className="wrapper pb-0 fhd:text-xl">
             <i>©</i> 2024
           </div>
@@ -84,7 +120,7 @@ function IntroSection() {
 
 function Bespoke() {
   return (
-    <div className="wrapper row-span-0 -mx-4 flex items-center justify-center bg-primary py-12 text-secondary lg:py-20 lg:max-xl:-mx-8">
+    <div className="wrapper flex items-center justify-center bg-primary py-12 text-secondary lg:py-20">
       <span className="text-2xl font-[450] uppercase xs:text-3xl md:text-5xl lg:text-6xl xl:text-8xl">
         bespoke development
       </span>

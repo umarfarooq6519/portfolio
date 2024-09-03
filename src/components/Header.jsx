@@ -4,10 +4,10 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 import ButtonHref from "./elements/ButtonHref";
 import { useEffect } from "react";
+import links from "../links";
+const resumeURL = "/resume.pdf";
 const menuSVG = "/menu.svg";
 const crossSVG = "/cross.svg";
-const resumeURL = "/resume.pdf";
-const linkedinURL = "https://www.linkedin.com/in/umar-farooq-325811255/";
 
 export default function Header() {
   // ######### manage menu state and function
@@ -77,9 +77,9 @@ function MenuSection({ toggleMenu }) {
       </button>
       <ul className="flex flex-col gap-16 max-sm:mt-10">
         <li className="w-full">
-          <a href="#home" onClick={toggleMenu}>
+          <Link to="/" onClick={toggleMenu}>
             <h6>Home</h6>
-          </a>
+          </Link>
         </li>
         <li className="w-full">
           <Link to="/about" onClick={toggleMenu}>
@@ -87,11 +87,9 @@ function MenuSection({ toggleMenu }) {
           </Link>
         </li>
         <li className="w-full">
-          <a href="#services" onClick={toggleMenu}>
-            <Link to="/contact" onClick={toggleMenu}>
-              <h6>Contact</h6>
-            </Link>
-          </a>
+          <Link to="/contact" onClick={toggleMenu}>
+            <h6>Contact</h6>
+          </Link>
         </li>
       </ul>
 
@@ -100,7 +98,7 @@ function MenuSection({ toggleMenu }) {
           <ButtonHref text="Résumé" href={resumeURL} theme="dark" />
         </li>
         <li className="w-full">
-          <ButtonHref text="Linkedin" href={linkedinURL} theme="dark" />
+          <ButtonHref text="Linkedin" href={links.linkedin} theme="dark" />
         </li>
         <li className="w-full">
           <i>©</i> 2024
