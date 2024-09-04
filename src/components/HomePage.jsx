@@ -1,10 +1,9 @@
 /* eslint-disable react/no-unescaped-entities */
+import { motion } from "framer-motion";
 
 import ContactPage from "./Contact";
 import ButtonLink from "./elements/ButtonLink";
 const starIcon = "/star.svg";
-
-import { motion } from "framer-motion";
 
 function HomePage() {
   return (
@@ -108,10 +107,21 @@ function HeroSection() {
           <div className="wrapper pb-0 fhd:text-xl">
             <i>©</i> 2024
           </div>
-          <p>
+          <motion.p
+            initial={{
+              opacity: 0,
+            }}
+            animate={{
+              opacity: 1,
+            }}
+            transition={{
+              duration: 0.2,
+              delay: 0.4,
+            }}
+          >
             For brands, spaces, <br /> online platforms & <br /> digital
             storytelling.
-          </p>
+          </motion.p>
         </div>
       </div>
     </div>

@@ -62,3 +62,21 @@ html {
   position: fixed;
   width: 100vw;
 }
+
+nav a.active {
+  position: relative;
+}
+
+/* Circle before the active link */
+@media screen and (min-width: 768px) {
+  nav a.active::before {
+    content: "";
+    position: absolute;
+    left: -15px;
+    top: 5px;
+    width: 8px;
+    height: 8px;
+    background-color: #1c1c1c; /* Color of the circle */
+    border-radius: 100%; /* Makes the element a circle */
+  }
+}

@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
-
-import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
+import { NavLink } from "react-router-dom";
 import { useState } from "react";
 import ButtonHref from "./elements/ButtonHref";
 import { useEffect } from "react";
@@ -19,12 +19,23 @@ export default function Header() {
 
   return (
     <header>
-      <nav className="container">
-        <ul>
-          <li className={`z-50 ${menuOpen && "text-secondary"} `}>
-            <Link to="/">
+      <nav className="container md:px-8">
+        <motion.ul
+          initial={{
+            opacity: 0,
+          }}
+          animate={{
+            opacity: 1,
+          }}
+          transition={{
+            duration: 0.2,
+            delay: 0.4,
+          }}
+        >
+          <li className={`z-50 ${menuOpen && "text-secondary"}`}>
+            <NavLink to="/">
               <b>Umar</b> farooq
-            </Link>
+            </NavLink>
           </li>
           {/* ########### mobile menu button */}
 
@@ -40,16 +51,16 @@ export default function Header() {
           {/* ########### laptop menu */}
           <ul className="w-8/12 max-md:hidden">
             <li>
-              <Link to="/about">about</Link>
+              <NavLink to="/about">about</NavLink>
             </li>
             <li>
-              <Link to="/contact">Contact</Link>
+              <NavLink to="/contact">Contact</NavLink>
             </li>
             <li>
               <ButtonHref text="Résumé" href={resumeURL} theme="light" />
             </li>
           </ul>
-        </ul>
+        </motion.ul>
       </nav>
     </header>
   );
@@ -77,19 +88,19 @@ function MenuSection({ toggleMenu }) {
       </button>
       <ul className="flex flex-col gap-16 max-sm:mt-10">
         <li className="w-full">
-          <Link to="/" onClick={toggleMenu}>
+          <NavLink to="/" onClick={toggleMenu}>
             <h6>Home</h6>
-          </Link>
+          </NavLink>
         </li>
         <li className="w-full">
-          <Link to="/about" onClick={toggleMenu}>
+          <NavLink to="/about" onClick={toggleMenu}>
             <h6>About</h6>
-          </Link>
+          </NavLink>
         </li>
         <li className="w-full">
-          <Link to="/contact" onClick={toggleMenu}>
+          <NavLink to="/contact" onClick={toggleMenu}>
             <h6>Contact</h6>
-          </Link>
+          </NavLink>
         </li>
       </ul>
 
