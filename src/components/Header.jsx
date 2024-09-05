@@ -82,7 +82,7 @@ function MenuSection({ toggleMenu }) {
 
   return (
     <motion.div
-      className="fixed inset-0 z-20 flex h-screen flex-col justify-center gap-28 bg-primary px-3 text-secondary"
+      className="fixed inset-0 z-20 flex h-svh flex-col justify-center gap-28 bg-primary px-3 text-secondary"
       initial={{ x: "100%" }} // Start from the left (100%)
       animate={{ x: 0 }} // Animate to the center (0)
       exit={{ x: "100%" }} // Exit back to the left
