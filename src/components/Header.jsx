@@ -56,7 +56,7 @@ export default function Header() {
 
           {/* ########### laptop menu */}
           <ul className="w-8/12 max-md:hidden">
-            <li>
+            <li className="nav-item">
               <NavLink to="/about">about</NavLink>
             </li>
             <li>

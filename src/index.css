@@ -67,16 +67,59 @@ nav a.active {
   position: relative;
 }
 
-/* Circle before the active link */
+/* Initial state for the ::before pseudo-element */
+nav a::before {
+  content: "";
+  position: absolute;
+  left: -17px; /* Default left position, can be adjusted based on design */
+  top: 7px; /* Default top position, can be adjusted based on design */
+  width: 0; /* Initial width */
+  height: 0; /* Initial height */
+  background-color: transparent; /* Initial color */
+  border-radius: 100%; /* Makes the element a circle */
+  transition: background-color 0.2s ease-out;
+}
+
+/* Media query for screen width 768px and up */
 @media screen and (min-width: 768px) {
   nav a.active::before {
-    content: "";
-    position: absolute;
+    left: -17px;
+    top: 7px;
+    width: 8px;
+    height: 8px;
+    background-color: #1c1c1c; /* Color of the circle */
+  }
+}
+
+/* Media query for screen width 1024px and up */
+@media screen and (min-width: 1024px) {
+  nav a.active::before {
+    left: -17px;
+    top: 10px;
+    width: 10px;
+    height: 10px;
+    background-color: #1c1c1c; /* Color of the circle */
+  }
+}
+
+/* Media query for screen width 1280px and up */
+@media screen and (min-width: 1280px) {
+  nav a.active::before {
     left: -15px;
     top: 5px;
     width: 8px;
     height: 8px;
     background-color: #1c1c1c; /* Color of the circle */
-    border-radius: 100%; /* Makes the element a circle */
+  }
+}
+
+/* Media query for screen width 1920px and up */
+@media screen and (min-width: 1920px) {
+  nav a.active::before {
+    left: -16px;
+    top: 7px;
+    width: 9px;
+    height: 9px;
+    background-color: #1c1c1c; /* Color of the circle */
   }
 }
