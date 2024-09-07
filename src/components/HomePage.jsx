@@ -151,7 +151,7 @@ function IntroSection() {
               amount: 0.5,
               once: true,
             }}
-            className="border xl:max-w-4xl fhd:max-w-6xl"
+            className=" xl:max-w-4xl fhd:max-w-6xl"
           >
             I'm a web *craftsman with a knack for coding and design. From
             concept to deployment, I build engaging websites, streamline user
