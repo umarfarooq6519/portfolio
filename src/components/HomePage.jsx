@@ -23,14 +23,14 @@ function HeroSection() {
   const isMobile = window.matchMedia("(max-width: 450px)").matches;
 
   return (
-    <div id="hero-section" className="container overflow-hidden">
+    <div id="hero-section" className="container min-h-screen overflow-hidden">
       {/* overflow hidden to hide the starIcon */}
-      <div className="items-left flex flex-col justify-center gap-20 py-32 lg:max-xl:py-80 xl:py-28 2xl:py-44">
+      <div className="items-left flex h-[90vh] flex-col justify-center gap-20">
         <div className="content uppercase max-xl:mt-10 2xl:ml-44">
           <div className="overflow-hidden pt-2">
             <motion.h2
               initial={{
-                y: 130,
+                y: 135,
               }}
               animate={{
                 y: 0,
@@ -58,6 +58,7 @@ function HeroSection() {
               transition={{
                 duration: 1,
                 ease: "backInOut",
+                delay: 0.5,
               }}
             >
               <motion.img
@@ -77,7 +78,7 @@ function HeroSection() {
               transition={{
                 duration: 0.6,
                 ease: "backOut",
-                delay: 0.4,
+                delay: 0.9,
               }}
             >
               Website
@@ -86,7 +87,7 @@ function HeroSection() {
           <div className="overflow-hidden max-xl:pb-2">
             <motion.h1
               initial={{
-                y: -140,
+                y: -165,
               }}
               animate={{
                 y: 0,
@@ -105,7 +106,7 @@ function HeroSection() {
 
         <div className="wrapper flex items-end justify-between pb-0 xl:pt-1 2xl:-mt-48">
           <div className="wrapper pb-0 fhd:text-xl">
-            <i>©</i> 2024
+            <i>©</i> {new Date().getFullYear()}
           </div>
           <motion.p
             initial={{
@@ -135,12 +136,27 @@ function IntroSection() {
       <div className="text-container flex flex-col">
         {/* span 8 */}
         <div className="content items-left flex flex-col gap-20 xl:gap-28">
-          <h5 className="xl:max-w-4xl fhd:max-w-6xl">
+          <motion.h5
+            initial={{
+              opacity: 0,
+            }}
+            whileInView={{
+              opacity: 1,
+            }}
+            transition={{
+              duration: 1,
+            }}
+            viewport={{
+              amount: 0.5,
+              once: true,
+            }}
+            className="xl:max-w-4xl fhd:max-w-6xl"
+          >
             I'm a web *craftsman with a knack for coding and design. From
             concept to deployment, I build engaging websites, streamline user
             interactions, and ensure every detail is pixel-perfect. Let's make
             your digital footprint stand out.
-          </h5>
+          </motion.h5>
           <div className="wrapper flex w-full items-start justify-between">
             <ButtonLink
               text="About"
@@ -149,11 +165,27 @@ function IntroSection() {
                 <i className="fa-solid fa-arrow-up-right-from-square fa-xs px-2"></i>
               }
             />
-            <div className="dim-text -mt-1 xl:-mt-[14.3em]">
+            <motion.div
+              initial={{
+                opacity: 0,
+              }}
+              whileInView={{
+                opacity: 1,
+              }}
+              transition={{
+                duration: 1,
+                delay: 0.8,
+              }}
+              viewport={{
+                amount: 0.5,
+                once: true,
+              }}
+              className="dim-text -mt-1 xl:-mt-[14.3em]"
+            >
               *Born, raised and
               <br />
               based in Pakistan
-            </div>
+            </motion.div>
           </div>
         </div>
         {/* span 4 */}
@@ -166,7 +198,7 @@ function Bespoke() {
   return (
     <div className="wrapper flex items-center justify-center bg-primary py-12 text-secondary lg:py-20">
       <span className="text-2xl font-[450] uppercase xs:text-3xl md:text-5xl lg:text-6xl xl:text-8xl">
-        bespoke development
+        *bespoke development
       </span>
     </div>
   );
