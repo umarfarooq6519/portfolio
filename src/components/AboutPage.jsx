@@ -83,18 +83,18 @@ function ServicesSection() {
                 <div key={index} className="overflow-hidden">
                   <motion.h4
                     initial={{
-                      opacity: 0.2,
+                      opacity: 0.1,
                     }}
                     whileInView={{
                       opacity: 1,
                     }}
                     transition={{
                       duration: 0.6,
-                      delay: 0.2,
+                      delay: 0,
                     }}
                     viewport={{
                       once: true,
-                      amount: 1,
+                      amount: 0.8,
                     }}
                   >
                     {service}
@@ -153,6 +153,7 @@ function ExperienceSection() {
           }}
           transition={{
             duration: 1,
+            delay: 0.2,
           }}
           viewport={{
             amount: 0.5,
@@ -176,10 +177,10 @@ function ExperienceSection() {
           }}
           transition={{
             duration: 1,
-            delay: 0.8,
+            delay: 1,
           }}
           viewport={{
-            amount: 0.5,
+            amount: 1,
             once: true,
           }}
           className="flex justify-end pr-0 pt-1 xl:w-full"

@@ -145,12 +145,13 @@ function IntroSection() {
             }}
             transition={{
               duration: 1,
+              delay: 0.2,
             }}
             viewport={{
               amount: 0.5,
               once: true,
             }}
-            className="xl:max-w-4xl fhd:max-w-6xl"
+            className="border xl:max-w-4xl fhd:max-w-6xl"
           >
             I'm a web *craftsman with a knack for coding and design. From
             concept to deployment, I build engaging websites, streamline user
@@ -174,10 +175,10 @@ function IntroSection() {
               }}
               transition={{
                 duration: 1,
-                delay: 0.8,
+                delay: 1,
               }}
               viewport={{
-                amount: 0.5,
+                amount: 1,
                 once: true,
               }}
               className="dim-text -mt-1 xl:-mt-[14.3em]"
@@ -196,10 +197,26 @@ function IntroSection() {
 
 function Bespoke() {
   return (
-    <div className="wrapper flex items-center justify-center bg-primary py-12 text-secondary lg:py-20">
-      <span className="text-2xl font-[450] uppercase xs:text-3xl md:text-5xl lg:text-6xl xl:text-8xl">
-        *bespoke development
-      </span>
+    <div className="relative overflow-hidden bg-primary py-12 text-center text-secondary lg:py-20">
+      <motion.span
+        initial={{
+          opacity: 0.1,
+        }}
+        whileInView={{
+          opacity: 1,
+        }}
+        transition={{
+          duration: 0.6,
+          delay: 0.2,
+        }}
+        viewport={{
+          once: true,
+          amount: 1,
+        }}
+        className="text-2xl font-[450] uppercase xs:text-3xl md:text-5xl lg:text-6xl xl:text-8xl"
+      >
+        *bespoke development*
+      </motion.span>
     </div>
   );
 }

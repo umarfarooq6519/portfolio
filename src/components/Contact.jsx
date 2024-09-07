@@ -47,8 +47,8 @@ export default function Contact() {
               delay: 0.8,
             }}
             viewport={{
-              amount: 0.5,
-              once: true,
+              amount: 0.3,
+              // once: true,
             }}
           >
             <h5 className="mt-14 lg:mt-20">
