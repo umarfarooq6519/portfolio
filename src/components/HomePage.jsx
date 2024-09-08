@@ -145,13 +145,13 @@ function IntroSection() {
             }}
             transition={{
               duration: 1,
-              delay: 0.2,
+              delay: 0,
             }}
             viewport={{
               amount: 0.5,
               once: true,
             }}
-            className=" xl:max-w-4xl fhd:max-w-6xl"
+            className="xl:max-w-4xl fhd:max-w-6xl"
           >
             I'm a web *craftsman with a knack for coding and design. From
             concept to deployment, I build engaging websites, streamline user
@@ -175,7 +175,7 @@ function IntroSection() {
               }}
               transition={{
                 duration: 1,
-                delay: 1,
+                delay: 0.4,
               }}
               viewport={{
                 amount: 1,
@@ -200,7 +200,7 @@ function Bespoke() {
     <div className="relative overflow-hidden bg-primary py-12 text-center text-secondary lg:py-20">
       <motion.span
         initial={{
-          opacity: 0.1,
+          opacity: 0,
         }}
         whileInView={{
           opacity: 1,

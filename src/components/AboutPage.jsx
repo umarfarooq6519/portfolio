@@ -153,7 +153,7 @@ function ExperienceSection() {
           }}
           transition={{
             duration: 1,
-            delay: 0.2,
+            delay: 0,
           }}
           viewport={{
             amount: 0.5,
@@ -177,7 +177,7 @@ function ExperienceSection() {
           }}
           transition={{
             duration: 1,
-            delay: 1,
+            delay: 0.3,
           }}
           viewport={{
             amount: 1,

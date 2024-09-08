@@ -24,7 +24,7 @@ export default function Contact() {
               transition={{
                 duration: 0.8, // Adjust the duration for smoother scaling
                 ease: [0.1, 1, 0.8, 1], // Smooth out the easing as it returns to original size
-                delay: 0.5,
+                delay: 0.4,
               }}
               viewport={{
                 once: true, // Triggers the animation once when it comes into view
@@ -44,11 +44,11 @@ export default function Contact() {
             }}
             transition={{
               duration: 1,
-              delay: 0.8,
+              delay: 0.4,
             }}
             viewport={{
               amount: 0.3,
-              // once: true,
+              once: true,
             }}
           >
             <h5 className="mt-14 lg:mt-20">
