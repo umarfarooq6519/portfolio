@@ -54,6 +54,7 @@ function AboutSection() {
                 duration: 0.4,
                 delay: 0.5,
               }}
+              rel="preload"
               src="/profile.JPEG"
               alt=""
               className="relative -left-24 -top-5 w-56 rounded-lg xs:max-sm:-left-28 md:-top-16 md:w-80 lg:-left-32 lg:-top-24 lg:max-xl:w-96 fhd:w-[23em]"
