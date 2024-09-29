@@ -34,7 +34,7 @@ html {
     @apply font-body text-[1rem] font-normal leading-6 tracking-wider xs:text-[1.1rem] sm:text-[1rem] md:text-[1.2rem] lg:text-[1.7rem] lg:leading-8 xl:text-[1.2rem] 2xl:text-[1.3rem] fhd:text-[1.6rem];
   }
   ul {
-    @apply flex w-full items-center justify-between text-sm font-[450] uppercase xs:text-base md:text-lg lg:text-2xl xl:text-sm fhd:text-lg;
+    @apply flex w-full items-center justify-between text-sm font-[450] uppercase xs:text-base md:text-lg xl:text-sm fhd:text-lg;
   }
 }
 

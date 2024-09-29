@@ -49,7 +49,7 @@ export default function Header() {
             </button>
           </li>
 
-          {/* Full-Screen Menu */}
+          {/* Mobile Screen Menu */}
           <AnimatePresence>
             {menuOpen && <MenuSection toggleMenu={toggleMenu} />}
           </AnimatePresence>

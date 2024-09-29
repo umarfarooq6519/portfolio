@@ -25,7 +25,7 @@ function HeroSection() {
   return (
     <div id="hero-section" className="container min-h-screen overflow-hidden">
       {/* overflow hidden to hide the starIcon */}
-      <div className="items-left flex h-[90vh] flex-col justify-center gap-20">
+      <div className="items-left flex h-[90vh] flex-col justify-center gap-20 xl:max-2xl:gap-0">
         <div className="content uppercase max-xl:mt-10 2xl:ml-44">
           <div className="overflow-hidden pt-2">
             <motion.h2
